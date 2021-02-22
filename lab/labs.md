@@ -18,7 +18,7 @@
 | **[6. Module & Packages](#6-module--packages)**            | [Calculator](#Calculator) |
 | **[7. Standard Libraries](#7-standard-libraries)**         | [Directories](#Directories) - [RegEx](#RegEx) | 
 | **[8. Data Science Libraries](#8-data-science-libraries)** | [Calculations](#Calculations) - [Mathplot](#Mathplot) |
-| **[9. Anwendungsbeispiele](#9-anwendungsbeispiele)**       | [Bookservice](#Bookservice) - [Movies](#Movies) - [SciKitLearn](#SciKitLearn) |
+| **[9. Anwendungsbeispiele](#9-anwendungsbeispiele)**       | [Bookservice](#Bookservice) - [SciKitLearn](#SciKitLearn) |
 | **[10. Weitere Übungen](#10-weitere-übungen)**             | [Schaltjahr](#Schaltjahr) - [Tree](#Tree) - [Caesar](#Caesar) |
 
 ## 1. Kick Start
@@ -449,6 +449,10 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
 
 ### UnitTest
 
+**Vorbereitung**
+Per default sind im VS Code Unit Tests ausgeschaltet. Diese müssen sie zuerst aktivieren. Folgen Sie dazu 
+der Beschreibung in den Installationshinweisen `Python-Installation.pdf`.
+
 **Ausgangslage**
 - Unit Tests helfen uns, den Code automatisiert zu testen. 
 - Dabei wird eine zu prüfende Methode aufgerufen und das aktuellen Resultat mit einen erwarteten Wert verglichen. 
@@ -471,9 +475,9 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
         actual = MathUtil.max(5,12,20)
         self.assertEqual(expected, actual)
   ```
-- Erstellen Sie dazu die Klasse `MathUtilTest` und definieren Sie entsprechende Testmethoden zum überprüfen
+- Erstellen Sie dazu die Klasse `MathUtil_test` und definieren Sie entsprechende Testmethoden zum überprüfen
   der beiden Methoden `min()` und `max()`.
-- Führen Sie den Test aus der Entwicklungsumgebung aus und überrüfen Sie die Resultate. 
+- Führen Sie den Test aus der Entwicklungsumgebung aus und überrüfen Sie die Resultate.
 
 
 ## 5. File Input/Output
@@ -660,11 +664,12 @@ durch und lernen Sie einige Möglichkeiten der Mathplot Bibliothek kennen.
 ## 9. Anwendungsbeispiele
 Schauen Sie sich die folgenden Anwendungsbeispiel (im Verzeichnis lab/09-apps) an.
 
+**Vorbereitung**
+Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu der Beschreibung in den 
+Installationshinweisen `Python-Installation.pdf`.
+
 ### Bookservice
 - [Beispiel eines REST Services mit Flask](09-apps/bookservice)
-
-### Movies
-- [Beispiel IMDb Best Movies Sentiment Anlayse](09-apps/movies)
 
 ### SciKitLearn
 - [Beispiel Iris DataSet](09-apps/scikit/plot_iris_dataset.ipynb)
