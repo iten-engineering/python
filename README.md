@@ -49,7 +49,6 @@
 
 9. Anwendungsbeispiele
    - Bookservice (Flask REST service)
-   - Movies (IMDb best movies sentiment analysis)
    - SciKit (Iris data set samples)
 
 10. Weitere Übungen
