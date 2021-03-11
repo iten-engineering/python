@@ -113,7 +113,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
 
 
 ### Modulo
-- Erstellen Sie ein Script `note.py`, dass nacheinander alle ungeraden Zahlen zwischen 1 und 30 ausgibt. 
+- Erstellen Sie ein Script `modulo.py`, dass nacheinander alle ungeraden Zahlen zwischen 1 und 30 ausgibt. 
 - Verwenden Sie dazu den Modulo Operator `%`.
 
   
