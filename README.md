@@ -3,8 +3,8 @@
 # Python 
 - [Content](#content)
 - [Example](example)
-- [Labs](lab/labs.md)
-- [Setup](setup.md)
+- [Labs](doc/labs.md)
+- [Setup](doc/setup.md)
 - [Reference](#reference)
 
 ## Content
