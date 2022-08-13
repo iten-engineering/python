@@ -1,7 +1,8 @@
 ![Logo](https://www.iten-engineering.ch/logo.png)
 
-# Python course
+# Python
 
+**Content**
 - [Installation](doc/)
 - [Labs](doc/labs.md)
 - [Labs Code](lab)
@@ -9,6 +10,6 @@
 - [Development](doc/dev.md)
 - [Reference](doc/refs.md)
 
-**Course overview**
-- <a href="https://www.iten-engineering.ch/course.php" target="_blank">Current courses</a>
+# Ohter courses
+- <a href="https://www.iten-engineering.ch/course.php" target="_blank">Current course overview</a>
 
