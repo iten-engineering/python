@@ -808,7 +808,7 @@ Kennenlernen des streamlit Framework.
 
 1. Gehen sie auf die Web Site https://streamlit.io/ und erkunden sie die Dokumentation.
 
-2. Erstellen Sie eine Datei hello-streamlit.py und implementieren Sie die Hello World Anwendung gemäss der Einführung. 
+2. Erstellen Sie eine Datei `hello-streamlit.py` und implementieren Sie die Hello World Anwendung gemäss der Einführung. 
 
 3. Starten Sie die Anwendung mit dem folgendem Befehl in einem Terminal:
    ```
