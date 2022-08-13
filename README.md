@@ -12,5 +12,3 @@
 
 # Course overview
 - <a href="https://www.iten-engineering.ch/course.php" target="_blank">Current courses</a>
-
----
