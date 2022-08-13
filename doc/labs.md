@@ -802,7 +802,7 @@ Installationshinweisen `Python-Installation.pdf`.
 
 Kennenlernen des streamlit Framework.
 
-![Hello Streamlit](../../img/hello-streamlit.png)
+![Hello Streamlit](img/hello-streamlit.png)
 
 #### Tasks
 
@@ -824,7 +824,7 @@ Kennenlernen des streamlit Framework.
 #### Overview
 Einlesen einer Excel Datei mit Verkaufszahlen pro Stadt, Anzeige als Tabelle und Balkendiagramm via Web Anwendung. 
 
-![Sales](../../img/sales.png)
+![Sales](img/sales.png)
 
 #### Tasks
 
