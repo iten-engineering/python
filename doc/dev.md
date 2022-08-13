@@ -1,4 +1,4 @@
-# Setup
+# Development
 
 Content
 - [Package Manager](#Package-Manager)
@@ -151,4 +151,4 @@ Getting Started with Python in VS Code
 
 
 ---
-[Home](README.md) &nbsp; | &nbsp; [Top](#Setup) &nbsp;
+[Home](README.md) &nbsp; | &nbsp; [Top](#Development) &nbsp;
