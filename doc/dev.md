@@ -151,4 +151,4 @@ Getting Started with Python in VS Code
 
 
 ---
-[Home](README.md) &nbsp; | &nbsp; [Top](#Development) &nbsp;
+[Home](../README.md) &nbsp; | &nbsp; [Top](#Development) &nbsp;
