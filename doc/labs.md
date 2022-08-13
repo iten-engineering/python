@@ -853,18 +853,18 @@ Einlesen einer Excel Datei mit Verkaufszahlen pro Stadt, Anzeige als Tabelle und
 7. Bauen Sie eine Checkbox ein mit den Namen **Show** und zeigen Sie die Tabelle mit dem DataFrame nur an,
    wenn die Checkbox angewählt ist.
    Starten Sie die Anwendung und prüfen Sie das Resultat.
-  ![Show](../../img/sales-show-table.png)
+  ![Show](img/sales-show-table.png)
 
 8. Erstellen Sie mit Streamlit einen Untertitel **Chart** und zeigen Sie die Daten mit den Streamlit Befehl
    `st.bar_chart(df)` an.
    Starten Sie die Anwendung und prüfen Sie das Resultat.
 
 9. Fügen sie eine SelectBox ein mit der die einzelnen Städte oder alle zusammen angewählt werden können.
-![SelectBox](../../img/sales-select-town.png)
+![SelectBox](img/sales-select-town.png)
 
 10. Passen Sie die Anzeige vom Chart so an, dass entweder die Daten einer einzelnen Stadt oder alle angezeigt werden, so wie Sie es in der SelectBox angewählt haben.
 Starten Sie die Anwendung und prüfen Sie das Resultat.
-![Sales Bern](../../img/sales-bern.png)
+![Sales Bern](img/sales-bern.png)
 
 11. Fügen Sie im der Excel Datei eine neue Stadt hinzu und passen Sie den Code so an, das die Auswahl der    SelectBox automatisch anhand der Excel Daten generiert wird.
     Starten Sie die Anwendung und prüfen Sie das Resultat.
