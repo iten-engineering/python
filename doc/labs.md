@@ -18,7 +18,7 @@
 | **[6. Module & Packages](#6-module--packages)**            | [Calculator](#Calculator) |
 | **[7. Standard Libraries](#7-standard-libraries)**         | [Directories](#Directories) - [RegEx](#RegEx) | 
 | **[8. Data Science Libraries](#8-data-science-libraries)** | [Calculations](#Calculations) - [Mathplot](#Mathplot) - [Umsatz (Excel)](#Umsatz) - [Footprint(CSV)](#Footprint) - [Covid (JSON)](#Covid) |
-| **[9. Anwendungsbeispiele](#9-anwendungsbeispiele)**       | [Bookservice](#Bookservice) - [SciKitLearn](#SciKitLearn) |
+| **[9. Anwendungsbeispiele](#9-anwendungsbeispiele)**       | [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) - [SciKitLearn](#SciKitLearn) |
 | **[10. Weitere Übungen](#10-weitere-übungen)**             | [Schaltjahr](#Schaltjahr) - [Tree](#Tree) - [Caesar](#Caesar) |
 
 ## 1. Kick Start
@@ -796,7 +796,7 @@ Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Si
 ### Bookservice 
 - [Beispiel eines REST Services mit Flask](09-apps/bookservice)
 
-### Hello Streamlit
+### HelloStreamlit
 
 #### Overview
 
