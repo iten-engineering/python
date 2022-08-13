@@ -11,5 +11,6 @@
 - [Reference](doc/refs.md)
 
 # Course overview
-> <a href="https://www.iten-engineering.ch/course.php" target="_blank">Current courses</a>
+- <a href="https://www.iten-engineering.ch/course.php" target="_blank">Current courses</a>
 
+---
