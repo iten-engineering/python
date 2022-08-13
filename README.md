@@ -10,6 +10,6 @@
 - [Development](doc/dev.md)
 - [Reference](doc/refs.md)
 
-# Ohter courses
-- <a href="https://www.iten-engineering.ch/course.php" target="_blank">Current course overview</a>
+# Course overview
+> <a href="https://www.iten-engineering.ch/course.php" target="_blank">Current courses</a>
 
