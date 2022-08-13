@@ -1,4 +1,4 @@
-# Reference
+# References
   
 - Python Home
   https://www.python.org 
@@ -28,4 +28,4 @@
   https://flexitcs.net/index.php/ubersicht-zu-den-wichtigsten-packages-und-ides-fur-r-und-python
 
 ---
-[Home](../README.md) &nbsp; | &nbsp; [Top](#Reference) &nbsp;
+[Home](../README.md) &nbsp; | &nbsp; [Top](#References) &nbsp;
