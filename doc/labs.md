@@ -790,8 +790,8 @@ Sie hat zwei Spalten. Die erste enthält die Monate, die zweite den Umsatz des e
 Schauen Sie sich die folgenden Anwendungsbeispiel (im Verzeichnis lab/09-apps) an.
 
 **Vorbereitung**
-Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu der Beschreibung in den 
-Installationshinweisen `Python-Installation.pdf`.
+Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu der  
+[Python Installation](Python-Installation.pdf) Beschreibung.
 
 ### Bookservice 
 - [Beispiel eines REST Services mit Flask](09-apps/bookservice)

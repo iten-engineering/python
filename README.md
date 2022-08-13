@@ -3,7 +3,7 @@
 # Python
 
 **Content**
-- [Installation](doc/)
+- [Installation](doc/Python-Installation.pdf)
 - [Labs](doc/labs.md)
 - [Labs Code](lab)
 - [Example Code](example)
