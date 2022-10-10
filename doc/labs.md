@@ -940,4 +940,4 @@ Regeln zur Bestimmung eines Schaltjahr:
   ein Schaltjahr obwohl es durch 4 und 100 teilbar ist.  
          
 ---
-[Home](../README.md) &nbsp; | &nbsp; [Top](#Python-Labs) &nbsp;
+[Home](../README.md) &nbsp; | &nbsp; [Top](#python-labs-german--englishlabs-enmd) &nbsp;
