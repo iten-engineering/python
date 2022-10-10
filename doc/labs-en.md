@@ -453,8 +453,8 @@ the valid range from 1 to 6.
 ### UnitTest
 
 **Preparation**
-By default, unit tests are disabled in the VS Code. You have to activate them first. Follow the 
-the description in the installation instructions `Python-Installation.pdf`.
+By default, unit tests are disabled in the VS Code. You have to activate them first, please follow the [installation notes](installation-en.pdf).
+
 
 **Unit tests**
 - Unit tests help us to test the code automatically. 
@@ -796,7 +796,7 @@ Take a look at the following sample applications (in the lab/09-apps directory):
 - Sales (Web Application with Streamlit)
 
 **Preparation:**
-Depending on the application example, further packages must be installed. Please follow the   [Python Installation](Python-Installation.pdf) description.
+Depending on the application example, further packages must be installed. Please follow the [installation notes](installation-en.pdf).
 
 
 ### SciKitLearn

@@ -450,8 +450,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
 ### UnitTest
 
 **Vorbereitung**
-Per default sind im VS Code Unit Tests ausgeschaltet. Diese müssen sie zuerst aktivieren. Folgen Sie dazu 
-der Beschreibung in den Installationshinweisen `Python-Installation.pdf`.
+Per default sind im VS Code Unit Tests ausgeschaltet. Diese müssen sie zuerst aktivieren. Folgen Sie dazu der Beschreibung in den [Installationshinweisen](installation.pdf).
 
 **Ausgangslage**
 - Unit Tests helfen uns, den Code automatisiert zu testen. 
@@ -790,8 +789,7 @@ Sie hat zwei Spalten. Die erste enthält die Monate, die zweite den Umsatz des e
 Schauen Sie sich die folgenden Anwendungsbeispiel (im Verzeichnis lab/09-apps) an.
 
 **Vorbereitung**
-Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu der  
-[Python Installation](Python-Installation.pdf) Beschreibung.
+Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu den [Installationshinweisen](installation.pdf).  
 
 ### Bookservice 
 - [Beispiel eines REST Services mit Flask](09-apps/bookservice)

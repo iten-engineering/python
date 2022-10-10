@@ -3,11 +3,11 @@
 # Python
 
 **Content**
-- [Installation](doc/Python-Installation.pdf)
-- [Labs](doc/labs.md)
-- [Labs Code](lab)
+- [Installation](doc/installation.pdf) | [Installation English](doc/installation-en.pdf)
+- [Labs](doc/labs.md) | [Labs English](doc/labs-en.md)
+- [Lab Code](lab)
 - [Example Code](example)
-- [Development](doc/dev.md)
+- [Development Notes](doc/dev.md)
 - [Reference](doc/refs.md)
 
 **Other courses**
