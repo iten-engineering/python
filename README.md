@@ -8,7 +8,7 @@
 - [Labs](doc/labs.md) | [Labs English](doc/labs-en.md)
 - [Labs Code](lab)
 - [Example Code](example)
-- [Solution Code](lab)
+- [Solution Code](solution)
 - [Development Notes](doc/dev.md)
 - [Reference](doc/refs.md)
 
