@@ -18,8 +18,8 @@
 | **[6. Modules & Packages](#6-modules--packages)**            | [Calculator](#Calculator) |
 | **[7. Standard Libraries](#7-standard-libraries)**         | [Directories](#Directories) - [RegEx](#RegEx) | 
 | **[8. Data Science Libraries](#8-data-science-libraries)** | [Calculations](#Calculations) - [Mathplot](#Mathplot) - [Umsatz (Excel)](#Umsatz) - [Footprint(CSV)](#Footprint) - [Covid (JSON)](#Covid) |
-| **[9. Applicaton examples](#9-applicaton-examples)**       | [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) - [SciKitLearn](#SciKitLearn) |
-| **[10. Further exercises](#10-further-exercises)**             | [Schaltjahr](#Schaltjahr) - [Tree](#Tree) - [Caesar](#Caesar) |
+| **[9. Applicaton examples](#9-applicaton-examples)**       | [SciKitLearn](#SciKitLearn) - [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) |
+| **[10. Further exercises](#10-further-exercises)**             | [Tree](#Tree) - [Caesar](#Caesar) - [Schaltjahr](#Schaltjahr) |
 
 ## 1. Kick Start
 

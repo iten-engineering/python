@@ -4,9 +4,11 @@
 
 **Content**
 - [Installation](doc/installation.pdf) | [Installation English](doc/installation-en.pdf)
+- [Handout](handout)
 - [Labs](doc/labs.md) | [Labs English](doc/labs-en.md)
-- [Lab Code](lab)
+- [Labs Code](lab)
 - [Example Code](example)
+- [Solution Code](lab)
 - [Development Notes](doc/dev.md)
 - [Reference](doc/refs.md)
 
