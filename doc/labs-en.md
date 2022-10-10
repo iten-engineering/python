@@ -936,4 +936,4 @@ Rules for determining a leap year:
   is inserted, although the year is divisible by 100. With this rule, for example, the year 2000 is a leap year although it is divisible by 4 and 100.  
   
 ---
-[Home](../README.md) &nbsp; | &nbsp; [Top](#python-labs-english--germanlabs) &nbsp;
+[Home](../README.md) &nbsp; | &nbsp; [Top](#python-labs-english--german) &nbsp;
