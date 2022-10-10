@@ -4,10 +4,10 @@
 | ---------------------------------------------------------- | ------- |
 | **[1. Kick Start](#1-kick-start)**                         | [HelloWorld](#HelloWorld) - [HelloJupiter](#HelloJupiter)   |
 | **[2. Basics](#2-basics)**                         |  |
-|   [2.1 Operatoren & Variablen](#21-operatoren--variablen)  | [Rechteck](#Rechteck) - [Fahrenheit](#Fahrenheit)  |
-|   [2.2 Kontrollstrukturen](#22-kontrollstrukturen)         | [Note](#Note) - [Modulo](#Modulo) - [Quadrat](#Quadrat) - [Group](#Group) |
-|   [2.3 Exception](#23-exception)                           | [Validation](#Validation) |
-|   [2.4 Funktionen & Lambda](#24-Funktionen--Lambda)        | [Maximum](#Maximum) - [Square](#Square) - [Linear](#Linear)  |
+|   [2.1 Operators & variables](#21-operators--variables)  | [Rechteck](#Rechteck) - [Fahrenheit](#Fahrenheit)  |
+|   [2.2 Control structures](#22-control-structures)         | [Note](#Note) - [Modulo](#Modulo) - [Quadrat](#Quadrat) - [Group](#Group) |
+|   [2.3 Exceptions](#23-exceptions)                           | [Validation](#Validation) |
+|   [2.4 Functions & lambda](#24-Functions--lambda)        | [Maximum](#Maximum) - [Square](#Square) - [Linear](#Linear)  |
 | **[3. Data types](#3-data-types)**               | Datenstrukturen |
 |   [3.1 Strings](#31-Strings)                               | [Compare](#Compare) - [SplitDate](#SplitDate) |
 |   [3.2 List & Tuples](#32-List--Tuples)                    | [Numbers](#Numbers) - [Filter](#Filter) |
@@ -15,7 +15,7 @@
 |   [3.4 Dictionaries](#34-Dictionaries)                     | [I18N](#I18N) - [Artikel](#Artikel) |
 | **[4. Classes & objects](#4-classes--objects)**            | [Kreis](#Kreis) - [Zylinder](#Zylinder) - [Fahrzeug](#Fahrzeug) - [MathUtil](#MathUtil) - [UnitTest](#UnitTest) |
 | **[5. File Input/Output](#5-file-inputoutput)**            | [Names](#Names) - [Books](#Books) |
-| **[6. Module & Packages](#6-module--packages)**            | [Calculator](#Calculator) |
+| **[6. Modules & Packages](#6-modules--packages)**            | [Calculator](#Calculator) |
 | **[7. Standard Libraries](#7-standard-libraries)**         | [Directories](#Directories) - [RegEx](#RegEx) | 
 | **[8. Data Science Libraries](#8-data-science-libraries)** | [Calculations](#Calculations) - [Mathplot](#Mathplot) - [Umsatz (Excel)](#Umsatz) - [Footprint(CSV)](#Footprint) - [Covid (JSON)](#Covid) |
 | **[9. Applicaton examples](#9-applicaton-examples)**       | [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) - [SciKitLearn](#SciKitLearn) |
@@ -52,7 +52,7 @@
 
 ## 2. Basics
 
-## 2.1 Operatoren & Variablen
+## 2.1 Operators & variables
 
 Operators, variables, comments, help & type information
 
@@ -86,7 +86,7 @@ Operators, variables, comments, help & type information
   input = input("Please enter a text:")
   ```
  
-## 2.2 Kontrollstrukturen
+## 2.2 Control structures
 
 ### Note
 - Create the script `note.py`, which reads a note in the range 1-6 as integer from the console. For this you have to convert the input with a cast to an int.
@@ -143,7 +143,7 @@ the valid range from 1 to 6.
   ```
 
        
-## 2.3 Exception
+## 2.3 Exceptions
 
 ### Validation
 - Create a script `validation.py` that reads in arbitrary integers.
@@ -166,7 +166,7 @@ the valid range from 1 to 6.
   [1, 7, 9]
   ```
 
-## 2.4 Funktionen & Lambda
+## 2.4 Functions & lambda
 
 ### Maximum
 - Create a script `maximum.py` with a function for the calculation of the maximum.
@@ -370,7 +370,8 @@ the valid range from 1 to 6.
 ## 4. Classes & objects
 
 ### Kreis
-- Create the class `Circle` with the attribute radius.
+- Create the script `kreis.py`.
+- Create the class `Kreis` with the attribute radius.
 - Create the method get_circumference() which returns the circumference (2*PI*radius) of the circle.
 - Create the method get_area() which returns the area of the circle (PI * radius^2)
 - Create the print() method that prints the radius, circumference and area to the console.
@@ -390,7 +391,8 @@ the valid range from 1 to 6.
   ```
 
 ### Zylinder 
-- Create the class `Cylinder`, which extends the class Circle with an additional 
+- Create the script `zylinder.py`.
+- Create the class `Zylinder`, which extends the class Circle with an additional 
   attribute for the height.
 - The class should have a constructor where the radius and the height can be specified.
 - Create the method volumen() which returns the volume (area * height) of the cylinder.
@@ -415,26 +417,27 @@ the valid range from 1 to 6.
   
 ### Fahrzeug
 - The following vehicles are to be mapped in an inheritance hierarchy:
-  - Bicycle with the attributes color, year of manufacture and brand and the operations: 
-    - drive() prints the text "bicycle is driving" on the console 
+  - Fahrrad with the attributes Farbe, Baujahr, Marke and the operations: 
+    - fahren() prints the text "bicycle is driving" on the console 
     - print() prints all attribute values
-  - Car with the attributes color, year of construction and seats and the operations:
+  - PKW with the attributes Farbe, Baujahr, Sitzplätze and the operations:
     - fahren() prints on the console the text "PKW fährt". 
     - print() prints all attribute values
 - Create a class diagram with an inheritance hierarchy so that the common 
   attributes and operations are grouped into a common superclass.
-- Implement the class diagram using Python in the file `vehicle.py`.
+- Implement the class diagram using Python in the file `fahrzeug.py`.
 - Create a test and verify your solution by creating one instance each of
   Bike and Car and calling the print() and drive() methods.
 - Example output:
   ```
-  Bicycle with color=silver, year=2020, brand=Scott
-  Bicycle rides...
-  Car with color=red, year=2007, seats=4
-  Passenger car rides...
+  Fahrrad mit Farbe=silber, Baujahr=2020, Marke=Scott
+  Fahrrad fährt...
+  PKW mit Farbe=rot, Baujahr=2007, Sitzplätze=4
+  PKW fährt...
   ```
 
 ### MathUtil
+- Create the script `mathutil.py`.
 - Create a class `MathUtil` with the following static methods:
   - min (a, b, c)
     Calculate and return the minimum of the three numbers.
@@ -477,6 +480,7 @@ By default, unit tests are disabled in the VS Code. You have to activate them fi
         actual = MathUtil.max(5,12,20)
         self.assertEqual(expected, actual)
   ```
+- Create the script `mathutil_test.py`.
 - Create the class `MathUtilTest.py` and define the corresponding test methods to check
   the two methods `min()` and `max()`.
 - Run the test from the development environment and check the results.
@@ -538,7 +542,7 @@ By default, unit tests are disabled in the VS Code. You have to activate them fi
   978-1-250-14523-9,All the Devils Are Here,Louise Penny,Macmillan USA
   ```
 
-## 6. Module & Packages
+## 6. Modules & Packages
 
 ### Calculator
 - Create the module `calculator.py` with the following methods:

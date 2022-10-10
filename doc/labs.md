@@ -253,6 +253,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
 ## 3.2 List & Tuples
 
 ### Numbers
+- Erstellen Sie das Script `numbers.py`.
 - Erstellen Sie ein Tuple `numbers` mit den folgenden Nummern: (7, 9, 16, 23, 4, 12, 99, 5)
 - Selektieren Sie folgende Elemente und geben Sie diese auf der Konsole aus:
   - Erstes und letztes Element
@@ -272,6 +273,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
 
 
 ### Filter
+- Erstellen Sie das Sript `filters.py`.
 - Erstellen Sie eine Liste `numbers` mit den Zahlen 1..20 und geben Sie diese auf der Konsole aus.
 - Selektieren Sie aus der Liste alle geraden Zahlen und speichern Sie diese der Liste `even_numbers`. 
   Verwenden Sie dazu eine Schleife. Geben Sie das Resultat auf der Konsole aus.
@@ -367,6 +369,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
 ## 4. Klassen & Objekte
 
 ### Kreis
+- Erstellen Sie das Script `kreis.py`.
 - Erstellen Sie die Klasse `Kreis` mit dem Attribut radius.
 - Erstellen Sie die Methode get_umfang() die den Umfang (2*PI*radius) des Kreises zurückgibt
 - Erstellen Sie die Methode get_flaeche() die die Kreisfläche (PI * radius^2) zurückgibt
@@ -387,6 +390,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
   ```
 
 ### Zylinder 
+- Erstellen Sie das Script `zylinder.py`.
 - Erstellen Sie die Klasse `Zylinder`, die die Klasse Kreis um ein zusätzliches 
   Attribut für die Höhe erweitert.
 - Die Klasse soll einen Konstruktor haben beim dem der Radius und die Höhe angegen werden können
@@ -420,7 +424,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
     - print() gibt alle Attributwerte aus
 - Erstellen Sie ein Klassendiagramm mit einer Vererbungshierarchie, so dass die gemeinsamen 
   Attribute und Operationen in einer gemeinsamen Oberklassen gruppiert werden.
-- Implementieren Sie das Klassendiagramm mit Python in der Datei `Fahrzeug.py`
+- Implementieren Sie das Klassendiagramm mit Python in der Datei `fahrzeug.py`
 - Erstellen Sie einen Test und überprüfen Sie Ihre Lösung, indem Sie je eine Instanz von
   Fahrrad und PKW erstellen und die print() und fahren() Methoden aufrufen.
 - Beispiel Ausgabe:
@@ -432,6 +436,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
   ```
 
 ### MathUtil
+- Erstellen Sie das Script `mathutil.py`.
 - Erstellen Sie eine Klasse `MathUtil` mit folgenden statischen Methoden:
   - min (a, b, c)
     Berechnung und Rückgabe des Minimums der drei Zahlen.
@@ -474,7 +479,8 @@ Per default sind im VS Code Unit Tests ausgeschaltet. Diese müssen sie zuerst a
         actual = MathUtil.max(5,12,20)
         self.assertEqual(expected, actual)
   ```
-- Erstellen Sie dazu die Klasse `MathUtil_test` und definieren Sie entsprechende Testmethoden zum überprüfen
+- Erstellen Sie das Script `mathutil_test.py`.
+- Erstellen Sie dazu die Klasse `MathUtilTest` und definieren Sie entsprechende Testmethoden zum überprüfen
   der beiden Methoden `min()` und `max()`.
 - Führen Sie den Test aus der Entwicklungsumgebung aus und überrüfen Sie die Resultate.
 
@@ -759,9 +765,6 @@ Laden von JSON Daten, Filter der Covid Zahlen für die gesammte Schweiz und Visu
 - datum
 - entries
 
-
-Sie hat zwei Spalten. Die erste enthält die Monate, die zweite den Umsatz des entsprechenden Monats.
-
 2. Erstellen Sie ein Script `covid.py` und importieren Sie folgende Bibliotheken
    ```
    import json
@@ -787,12 +790,21 @@ Sie hat zwei Spalten. Die erste enthält die Monate, die zweite den Umsatz des e
 
 ## 9. Anwendungsbeispiele
 Schauen Sie sich die folgenden Anwendungsbeispiel (im Verzeichnis lab/09-apps) an.
+- SciKitLearn (Klassifikation des IRIS Data Set mit SciKit Learn)
+- Bookservice (RESTful Web Service mit Flask)
+- HelloStreamlit (Web Anwendung mit Streamlit)
+- Sales (Web Anwendung mit Streamlit)
 
 **Vorbereitung**
 Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu den [Installationshinweisen](installation.pdf).  
 
+### SciKitLearn
+- [Beispiel Iris DataSet](09-apps/scikit/plot_iris_dataset.ipynb)
+- [Beispiel Iris K-means Clustering](09-apps/scikit/plot_cluster_iris.ipynb)
+- [Beispiel Iris PCA](09-apps/scikit/plot_pca_iris.ipynb)
+
 ### Bookservice 
-- [Beispiel eines REST Services mit Flask](09-apps/bookservice)
+- [Beispiel RESTful Web Service mit Flask](09-apps/bookservice)
 
 ### HelloStreamlit
 
@@ -870,32 +882,7 @@ Starten Sie die Anwendung und prüfen Sie das Resultat.
 12. Fügen sie am Ende der Anwendung eine Trennlinie ein und darunter einen Copyright Eintrag mit Ihrem Firmennamen.
 
 
-
-### SciKitLearn
-- [Beispiel Iris DataSet](09-apps/scikit/plot_iris_dataset.ipynb)
-- [Beispiel Iris K-means Clustering](09-apps/scikit/plot_cluster_iris.ipynb)
-- [Beispiel Iris PCA](09-apps/scikit/plot_pca_iris.ipynb)
-
-
 ## 10. Weitere Übungen
-
-### Schaltjahr
-- Erstellen Sie das Script `schaltjahr.py` welches eine Jahreszahl einliest und anschliessend ausgibt
-  ob es sich um ein Schaltjahr handelt oder nicht. 
-
-Regeln zur Bestimmung eines Schaltjahr:
-
-- Alle 4 Jahre wird mit dem 29. Februar ein Schalttag eingefügt. Damit wird dem Umstand Rechnung getragen, 
-  dass ein Jahr nach dem gregorianischen Kalenderjahr nicht exakt 365 Tage dauert. 
-
-- Pro Jahr gibt es mit dieser Lösung noch einen kleinen Fehler von einem Hundertertstel Tag zuviel.
-  Deshalb wird alle 100 Jahre auf ein Schaltag verzichtet und zwar genau dann, wenn die Jahreszahl genau
-  durch 100 teilbar ist. So ist zum Beispiel 1900 kein Schaltjahr, obwohl es durch 4 teilbar ist.
-
-- Nun braucht es noch eine weitere kleine Korrektur. Daher wird alle 400 Jahre noch ein Schaltjahr 
-  eingefügt, obwohl die Jahreszahl durch 100 teilbar ist. Mit dieser Regel ist zum Beispiel das Jahr 2000
-  ein Schaltjahr obwohl es durch 4 und 100 teilbar ist.  
-  
 
 ### Tree
 ![Tree](img/tree.png)
@@ -907,7 +894,6 @@ Regeln zur Bestimmung eines Schaltjahr:
 - Test der beiden Klassen   
 
 ### Caesar
-
 Die [Caesar-Verschlüsselung](https://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung) ist ein Verfahren für eine
 einfache Verschlüsselung von Text in einen Geheimcode. Dieser kann anschliessend auch wieder Entschlüsselt werden.
 - Bei der Verschlüsselung wird jeder Buchstabe durch einen anderen aus dem Alphabet ersetzt.
@@ -935,6 +921,23 @@ Schreiben sie eine Anwendung, welche einen Text und Schlüssel einliest.
   - `ABC` mit Schlüssel 2 = `CDE`
   - `A:C` mit Schlüssel 2 = `C:E`
 
-       
+
+### Schaltjahr
+- Erstellen Sie das Script `schaltjahr.py` welches eine Jahreszahl einliest und anschliessend ausgibt
+  ob es sich um ein Schaltjahr handelt oder nicht. 
+
+Regeln zur Bestimmung eines Schaltjahr:
+
+- Alle 4 Jahre wird mit dem 29. Februar ein Schalttag eingefügt. Damit wird dem Umstand Rechnung getragen, 
+  dass ein Jahr nach dem gregorianischen Kalenderjahr nicht exakt 365 Tage dauert. 
+
+- Pro Jahr gibt es mit dieser Lösung noch einen kleinen Fehler von einem Hundertertstel Tag zuviel.
+  Deshalb wird alle 100 Jahre auf ein Schaltag verzichtet und zwar genau dann, wenn die Jahreszahl genau
+  durch 100 teilbar ist. So ist zum Beispiel 1900 kein Schaltjahr, obwohl es durch 4 teilbar ist.
+
+- Nun braucht es noch eine weitere kleine Korrektur. Daher wird alle 400 Jahre noch ein Schaltjahr 
+  eingefügt, obwohl die Jahreszahl durch 100 teilbar ist. Mit dieser Regel ist zum Beispiel das Jahr 2000
+  ein Schaltjahr obwohl es durch 4 und 100 teilbar ist.  
+         
 ---
 [Home](../README.md) &nbsp; | &nbsp; [Top](#Python-Labs) &nbsp;
