@@ -3,23 +3,23 @@
 | Chapter                                                    | Exercises |
 | ---------------------------------------------------------- | ------- |
 | **[1. Kick Start](#1-kick-start)**                         | [HelloWorld](#HelloWorld) - [HelloJupiter](#HelloJupiter)   |
-| **[2. Grundlagen](#2-grundlagen)**                         | Grundlagen |
+| **[2. Basics](#2-basics)**                         |  |
 |   [2.1 Operatoren & Variablen](#21-operatoren--variablen)  | [Rechteck](#Rechteck) - [Fahrenheit](#Fahrenheit)  |
 |   [2.2 Kontrollstrukturen](#22-kontrollstrukturen)         | [Note](#Note) - [Modulo](#Modulo) - [Quadrat](#Quadrat) - [Group](#Group) |
 |   [2.3 Exception](#23-exception)                           | [Validation](#Validation) |
 |   [2.4 Funktionen & Lambda](#24-Funktionen--Lambda)        | [Maximum](#Maximum) - [Square](#Square) - [Linear](#Linear)  |
-| **[3. Datenstrukturen](#3-Datenstrukturen)**               | Datenstrukturen |
+| **[3. Data types](#3-data-types)**               | Datenstrukturen |
 |   [3.1 Strings](#31-Strings)                               | [Compare](#Compare) - [SplitDate](#SplitDate) |
 |   [3.2 List & Tuples](#32-List--Tuples)                    | [Numbers](#Numbers) - [Filter](#Filter) |
 |   [3.3 Sets](#33-Sets)                                     | [Mengen](#Mengen) |
 |   [3.4 Dictionaries](#34-Dictionaries)                     | [I18N](#I18N) - [Artikel](#Artikel) |
-| **[4. Klassen & Objekte](#4-klassen--objekte)**            | [Kreis](#Kreis) - [Zylinder](#Zylinder) - [Fahrzeug](#Fahrzeug) - [MathUtil](#MathUtil) - [UnitTest](#UnitTest) |
+| **[4. Classes & objects](#4-classes--objects)**            | [Kreis](#Kreis) - [Zylinder](#Zylinder) - [Fahrzeug](#Fahrzeug) - [MathUtil](#MathUtil) - [UnitTest](#UnitTest) |
 | **[5. File Input/Output](#5-file-inputoutput)**            | [Names](#Names) - [Books](#Books) |
 | **[6. Module & Packages](#6-module--packages)**            | [Calculator](#Calculator) |
 | **[7. Standard Libraries](#7-standard-libraries)**         | [Directories](#Directories) - [RegEx](#RegEx) | 
 | **[8. Data Science Libraries](#8-data-science-libraries)** | [Calculations](#Calculations) - [Mathplot](#Mathplot) - [Umsatz (Excel)](#Umsatz) - [Footprint(CSV)](#Footprint) - [Covid (JSON)](#Covid) |
-| **[9. Anwendungsbeispiele](#9-anwendungsbeispiele)**       | [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) - [SciKitLearn](#SciKitLearn) |
-| **[10. Weitere Übungen](#10-weitere-übungen)**             | [Schaltjahr](#Schaltjahr) - [Tree](#Tree) - [Caesar](#Caesar) |
+| **[9. Applicaton examples](#9-applicaton-examples)**       | [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) - [SciKitLearn](#SciKitLearn) |
+| **[10. Further exercises](#10-further-exercises)**             | [Schaltjahr](#Schaltjahr) - [Tree](#Tree) - [Caesar](#Caesar) |
 
 ## 1. Kick Start
 
@@ -50,7 +50,7 @@
   input = input("Please enter a text:")
   ```
 
-## 2. Grundlagen
+## 2. Basics
 
 ## 2.1 Operatoren & Variablen
 
@@ -203,7 +203,7 @@ the valid range from 1 to 6.
   ```
 
 
-## 3. Datenstrukturen
+## 3. Data types
 
 ## 3.1 Strings
 
@@ -367,7 +367,7 @@ the valid range from 1 to 6.
 
 
 
-## 4. Klassen & Objekte
+## 4. Classes & objects
 
 ### Kreis
 - Create the class `Circle` with the attribute radius.
@@ -786,7 +786,7 @@ Load JSON data, filter the Covid numbers for Switzerland and visualize them as a
 
 8. Run the program again and check your result.
 
-## 9. Anwendungsbeispiele
+## 9. Applicaton examples
 
 ### Overview
 Take a look at the following sample applications (in the lab/09-apps directory):
@@ -878,7 +878,7 @@ Import of an Excel file with sales figures per city and display the values as ta
 12. Add a separator line at the end of the application and a copyright entry with your company name below it.
 
 
-## 10. Weitere Übungen
+## 10. Further exercises
 
 ### Tree
 ![Tree](img/tree.png)
