@@ -796,7 +796,7 @@ Schauen Sie sich die folgenden Anwendungsbeispiel (im Verzeichnis lab/09-apps) a
 - Sales (Web Anwendung mit Streamlit)
 
 **Vorbereitung**
-Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu den [Installationshinweisen](Python-Installation-EN.pdf).  
+Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu den [Installationshinweisen](Python-Installation.pdf).  
 
 ### SciKitLearn
 - [Beispiel Iris DataSet](09-apps/scikit/plot_iris_dataset.ipynb)
