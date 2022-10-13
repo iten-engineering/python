@@ -1,1 +1,1 @@
-# Notizen Kapitel 6
+# Notes chapter 6

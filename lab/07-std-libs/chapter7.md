@@ -1,1 +1,1 @@
-# Notizen Kapitel 7
+# Notes chapter 7
