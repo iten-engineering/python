@@ -799,12 +799,12 @@ Schauen Sie sich die folgenden Anwendungsbeispiel (im Verzeichnis lab/09-apps) a
 Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu den [Installationshinweisen](Python-Installation.pdf).  
 
 ### SciKitLearn
-- [Beispiel Iris DataSet](09-apps/scikit/plot_iris_dataset.ipynb)
-- [Beispiel Iris K-means Clustering](09-apps/scikit/plot_cluster_iris.ipynb)
-- [Beispiel Iris PCA](09-apps/scikit/plot_pca_iris.ipynb)
+- [Beispiel Iris DataSet](../lab/09-apps/scikit/plot_iris_dataset.ipynb)
+- [Beispiel Iris K-means Clustering](../lab/09-apps/scikit/plot_cluster_iris.ipynb)
+- [Beispiel Iris PCA](../lab/09-apps/scikit/plot_pca_iris.ipynb)
 
 ### Bookservice 
-- [Beispiel RESTful Web Service mit Flask](09-apps/bookservice)
+- [Beispiel RESTful Web Service mit Flask](../lab/09-apps/bookservice)
 
 ### HelloStreamlit
 
