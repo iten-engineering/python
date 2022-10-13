@@ -1,4 +1,4 @@
-# Python Labs German | [English](labs-en.md)
+# Python Labs German | [English](lab-en.md)
 
 | Kapitel                                                    | Übungen |
 | ---------------------------------------------------------- | ------- |
