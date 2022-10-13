@@ -4,8 +4,8 @@
 
 **Content**
 - [Handout](handout)
-- [Lab](doc/lab.md) | [Labs English](doc/lab-en.md)
-- [Labs Code](lab)
+- [Lab](doc/lab.md) | [Lab English](doc/lab-en.md)
+- [Lab Code](lab)
 - [Example Code](example)
 - [Solution Code](solution)
 - [Development Notes](doc/dev.md)
