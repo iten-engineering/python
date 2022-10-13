@@ -455,7 +455,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
 ### UnitTest
 
 **Vorbereitung**
-Per default sind im VS Code Unit Tests ausgeschaltet. Diese müssen sie zuerst aktivieren. Folgen Sie dazu der Beschreibung in den [Installationshinweisen](Python-Installation.pdf).
+Per default sind im VS Code Unit Tests ausgeschaltet. Diese müssen sie zuerst aktivieren. Folgen Sie dazu der Beschreibung in den Installationshinweisen.
 
 **Ausgangslage**
 - Unit Tests helfen uns, den Code automatisiert zu testen. 
@@ -796,7 +796,7 @@ Schauen Sie sich die folgenden Anwendungsbeispiel (im Verzeichnis lab/09-apps) a
 - Sales (Web Anwendung mit Streamlit)
 
 **Vorbereitung**
-Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu den [Installationshinweisen](Python-Installation.pdf).  
+Je nach Anwendungsbeispiel müssen weiter Packages installiert werden. Folgen Sie dazu den Installationshinweisen.  
 
 ### SciKitLearn
 - [Beispiel Iris DataSet](../lab/09-apps/scikit/plot_iris_dataset.ipynb)

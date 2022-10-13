@@ -456,7 +456,7 @@ the valid range from 1 to 6.
 ### UnitTest
 
 **Preparation**
-By default, unit tests are disabled in the VS Code. You have to activate them first, please follow the [installation notes](Python-Installation-EN.pdf).
+By default, unit tests are disabled in the VS Code. You have to activate them first, please follow the installation notes.
 
 
 **Unit tests**
@@ -800,13 +800,13 @@ Take a look at the following sample applications (in the lab/09-apps directory):
 - Sales (Web Application with Streamlit)
 
 **Preparation:**
-Depending on the application example, further packages must be installed. Please follow the [installation notes](Python-Installation-EN.pdf).
+Depending on the application example, further packages must be installed. Please follow the Installation notes.
 
 
 ### SciKitLearn
-- [Example Iris DataSet](09-apps/scikit/plot_iris_dataset.ipynb)
-- [Example Iris K-means Clustering](09-apps/scikit/plot_cluster_iris.ipynb)
-- [Example Iris PCA](09-apps/scikit/plot_pca_iris.ipynb)
+- [Example Iris DataSet](../lab/09-apps/scikit/plot_iris_dataset.ipynb)
+- [Example Iris K-means Clustering](../lab/09-apps/scikit/plot_cluster_iris.ipynb)
+- [Example Iris PCA](../lab/09-apps/scikit/plot_pca_iris.ipynb)
 
 
 ### Bookservice 
