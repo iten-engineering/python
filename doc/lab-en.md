@@ -810,7 +810,7 @@ Depending on the application example, further packages must be installed. Please
 
 
 ### Bookservice 
-- [Example RESTful Web Service](09-apps/bookservice)
+- [Example RESTful Web Service](../lab/09-apps/bookservice)
 
 
 ### HelloStreamlit
