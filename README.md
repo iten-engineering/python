@@ -3,7 +3,7 @@
 # Python
 
 **Content**
-- [Installation](doc/installation.pdf) | [Installation English](doc/installation-en.pdf)
+- [Installation](doc/Python-Installation.pdf) | [Installation English](doc/Python-Installation-EN.pdf)
 - [Handout](handout)
 - [Labs](doc/labs.md) | [Labs English](doc/labs-en.md)
 - [Labs Code](lab)
