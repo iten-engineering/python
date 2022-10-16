@@ -597,7 +597,7 @@ Per default sind im VS Code Unit Tests ausgeschaltet. Diese müssen sie zuerst a
 
 ### Directories
 - Erstellen Sie das Script `dirs.py` dass mit Hilfe einer Rekursion den Inhalt des
-  Verzeichnis `c:/../python/example/09-apps/` vom Python Projekt ausgibt.
+  aktuellen Verzeichnisses ausgibt.
 - Verwenden Sie dazu die Methoden `os.listdir()`, `os.path.isdir()` und `os.path.isfile()` 
   der os Bibliothek.
 - Geben Sie die Datei- und Verzeichnisnamen verschachtelt aus, wie im folgenden Beispiel

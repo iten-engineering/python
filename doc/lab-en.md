@@ -16,7 +16,7 @@
 | **[4. Classes & objects](#4-classes--objects)**            | [Kreis](#Kreis) - [Zylinder](#Zylinder) - [Fahrzeug](#Fahrzeug) - [MathUtil](#MathUtil) - [UnitTest](#UnitTest) |
 | **[5. File Input/Output](#5-file-inputoutput)**            | [Names](#Names) - [Books](#Books) |
 | **[6. Modules & Packages](#6-modules--packages)**            | [Calculator](#Calculator) |
-| **[7. Standard Libraries](#7-standard-libraries)**         | [Directories](#Directories) - [RegEx](#RegEx) | 
+| **[7. Standard Libraries](#7-standard-libraries)**         | [Directory](#Directory) - [Directories](#Directories) - [RegEx](#RegEx) | 
 | **[8. Data Science Libraries](#8-data-science-libraries)** | [Calculations](#Calculations) - [Mathplot](#Mathplot) - [Umsatz (Excel)](#Umsatz) - [Footprint(CSV)](#Footprint) - [Covid (JSON)](#Covid) |
 | **[9. Applicaton examples](#9-applicaton-examples)**       | [SciKitLearn](#SciKitLearn) - [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) |
 | **[10. Further exercises](#10-further-exercises)**             | [Tree](#Tree) - [Caesar](#Caesar) - [Schaltjahr](#Schaltjahr) |
@@ -570,9 +570,35 @@ By default, unit tests are disabled in the VS Code. You have to activate them fi
   ```
  
 ## 7. Standard Libraries
-  
+
+### Directory
+- Create the script `dir.py` that should output the contents of the current directory.
+- Use the method `os.getcwd()` to get the path to the current directory.
+- Afterwards you can use the method `os.listdir()` to read the content of the directory.
+- Now create two empty lists with the names `dirs` and `files`.
+- The entries obtained with `os.listdir()` are now to be split into the two lists.
+- To determine whether it is a file or a directory, use the methodes `os.path.isdir(...)` and `os.path.isfile(...)`:
+  - Note that the full path and file name must be specified for the check. 
+  - So you have to create a new variable with path and entry from `os.listdir()` before doing the check with `os.path.isdir(...)` / `os.path.isfile(...)`.
+- Output the directories and files to the console as shown in the following example:
+  ```
+  Directories:
+  - .git
+  - doc
+  - example
+  - handout
+  - lab
+  - solution
+  Files:
+  - .gitignore
+  - LICENSE
+  - python.iml
+  - README.md
+  ```
+
+
 ### Directories
-- Create the script `dirs.py` that uses a recursion to print the contents of the directory `c:/../python/example/09-apps/` from the Python project.
+- Create the script `dirs.py` that uses a recursion to print the contents of the current directory.
 - Use the methods `os.listdir()`, `os.path.isdir()` and `os.path.isfile()` of the os library.
 - Output the file and directory names in a nested fashion, as shown in the following example shown below:
   ```
