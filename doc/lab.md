@@ -569,7 +569,32 @@ Per default sind im VS Code Unit Tests ausgeschaltet. Diese müssen sie zuerst a
   ```
  
 ## 7. Standard Libraries
-  
+
+### Directory
+- Erstellen Sie das Script `dir.py` dass den Inhalt des aktuellen Verzeichnisses ausgeben soll
+- Verwenden Sie dazu die Methode `os.getcwd()` um den Pfad zum akteullen Verzeichnis zu erhalten
+- Anschliessend können Sie mit der Methode `os.listdir()` den Inhalt des Verzeichnis auslesen
+- Erstellen Sie nun zwei leere Listen mit den Namen `dirs` und `files`
+- Die mit `os.listdir()` erhaltenen Einträge sollen nun in die beiden Listen aufgeteilt werden.
+- Zur Bestimmung ob es sich um eine  Datei oder ein Verzeichnis handelt, verwenden Sie die Methonden `os.path.isdir(...)` und `os.path.isfile(...)`
+  - Beachten Sie dass für die Überprüfung der vollständige Pfad- und  Dateiname angegeben werden muss. 
+  - Sie müssen also eine neue Variable mit Pfad und Eintrag aus `os.listdir()` erstellen, bevor sie die Prüfung mit `os.path.isdir(...)` / `os.path.isfile(...)` machen.
+- Geben Sie die Verzeichnisse und Dateien auf der Console aus, wie im folgenden Beispiel dargestellt:
+  ```
+  Directories:
+  - .git
+  - doc
+  - example
+  - handout
+  - lab
+  - solution
+  Files:
+  - .gitignore
+  - LICENSE
+  - python.iml
+  - README.md
+  ```
+
 ### Directories
 - Erstellen Sie das Script `dirs.py` dass mit Hilfe einer Rekursion den Inhalt des
   Verzeichnis `c:/../python/example/09-apps/` vom Python Projekt ausgibt.

@@ -11,8 +11,16 @@ def dir_walker(path, level):
         print(intend + dir)
         dir_walker(path + dir + "/", level+1)
 
-# start_path = "/home/lab/workspace/python-solution/09-apps/"
-start_path = "D:/dev/surfmachine/python/solution/09-apps/"
+start_path = os.getcwd() + "\\solution\\"
+
+print("#")
+print("# start_path")
+print("#")
+print(start_path)
+
+print("#")
+print("# tree")
+print("#")
 dir_walker(start_path, 0)
 
 
