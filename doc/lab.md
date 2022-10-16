@@ -16,7 +16,7 @@
 | **[4. Klassen & Objekte](#4-klassen--objekte)**            | [Kreis](#Kreis) - [Zylinder](#Zylinder) - [Fahrzeug](#Fahrzeug) - [MathUtil](#MathUtil) - [UnitTest](#UnitTest) |
 | **[5. File Input/Output](#5-file-inputoutput)**            | [Names](#Names) - [Books](#Books) |
 | **[6. Module & Packages](#6-module--packages)**            | [Calculator](#Calculator) |
-| **[7. Standard Libraries](#7-standard-libraries)**         | [Directories](#Directories) - [RegEx](#RegEx) | 
+| **[7. Standard Libraries](#7-standard-libraries)**         | [Directory](#Directory) - [Directories](#Directories) - [RegEx](#RegEx) | 
 | **[8. Data Science Libraries](#8-data-science-libraries)** | [Calculations](#Calculations) - [Mathplot](#Mathplot) - [Umsatz (Excel)](#Umsatz) - [Footprint(CSV)](#Footprint) - [Covid (JSON)](#Covid) |
 | **[9. Anwendungsbeispiele](#9-anwendungsbeispiele)**       | [SciKitLearn](#SciKitLearn) - [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) |
 | **[10. Weitere Übungen](#10-weitere-übungen)**             | [Tree](#Tree) - [Caesar](#Caesar) - [Schaltjahr](#Schaltjahr) |
@@ -571,12 +571,12 @@ Per default sind im VS Code Unit Tests ausgeschaltet. Diese müssen sie zuerst a
 ## 7. Standard Libraries
 
 ### Directory
-- Erstellen Sie das Script `dir.py` dass den Inhalt des aktuellen Verzeichnisses ausgeben soll
-- Verwenden Sie dazu die Methode `os.getcwd()` um den Pfad zum akteullen Verzeichnis zu erhalten
+- Erstellen Sie das Script `dir.py` dass den Inhalt des aktuellen Verzeichnisses ausgeben soll.
+- Verwenden Sie dazu die Methode `os.getcwd()` um den Pfad zum aktuellen Verzeichnis zu erhalten.
 - Anschliessend können Sie mit der Methode `os.listdir()` den Inhalt des Verzeichnis auslesen
 - Erstellen Sie nun zwei leere Listen mit den Namen `dirs` und `files`
 - Die mit `os.listdir()` erhaltenen Einträge sollen nun in die beiden Listen aufgeteilt werden.
-- Zur Bestimmung ob es sich um eine  Datei oder ein Verzeichnis handelt, verwenden Sie die Methonden `os.path.isdir(...)` und `os.path.isfile(...)`
+- Zur Bestimmung ob es sich um eine  Datei oder ein Verzeichnis handelt, verwenden Sie die Methonden `os.path.isdir(...)` und `os.path.isfile(...)`:
   - Beachten Sie dass für die Überprüfung der vollständige Pfad- und  Dateiname angegeben werden muss. 
   - Sie müssen also eine neue Variable mit Pfad und Eintrag aus `os.listdir()` erstellen, bevor sie die Prüfung mit `os.path.isdir(...)` / `os.path.isfile(...)` machen.
 - Geben Sie die Verzeichnisse und Dateien auf der Console aus, wie im folgenden Beispiel dargestellt:
