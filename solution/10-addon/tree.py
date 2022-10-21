@@ -6,7 +6,7 @@ class Node:
         self.childs = []
 
     def is_root(self):
-        return self.parent == None
+        return self.parent is None
 
     def is_leaf(self):
         return len(self.childs) == 0

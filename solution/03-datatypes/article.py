@@ -30,7 +30,7 @@ for nr in articles:
 print("\nShow article with lowest price:")
 article = None
 for nr in articles:
-    if article == None:
+    if article is None:
         article = articles[nr]
         continue
     if articles[nr]["price"] < article["price"]:

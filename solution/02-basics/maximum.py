@@ -1,6 +1,6 @@
 
 def max(x, y, z=None):
-    if z == None:
+    if z is None:
         return x if x > y else y
     if x > y and x > z:
         return x

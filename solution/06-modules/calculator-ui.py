@@ -11,7 +11,7 @@ x, op, y  = tokens
 map = {"+" : add, "-" : sub, "*" : mul, "/" : div }
 f = map.get(op)
 
-if f == None:
+if f is None:
     print("Unknown operator")
 elif (f == div and y == "0"):
     print("Division by zero")
