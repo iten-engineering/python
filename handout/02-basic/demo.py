@@ -1,17 +1,24 @@
 
-# Prüfen ob Zahl 5 gerade ist
-x = 5 % 2
-print("5 % 2 = ", x)
+print("#")
+print("# if statment")
+print("#")
+x = 4
 
-# Prüfen ob Zahl 6 gerade ist
-x = 6 % 2
-print("6 % 2 = ", x)
+if x < 42:
+    print("X ist kleiner 42")
+print(x)
 
-# Boolean
-x = 10
-condition_1 = x > 5     # True
-condition_2 = False
 
-print (condition_1 or condition_2)
-print (condition_1 and condition_2 and True)
+# Ternary operator
 
+a = 5
+b = 3
+
+x = 10 if a > b else 1
+print(x)
+
+if a > b:
+    y = 10
+else:
+    y = 1
+print(y)
