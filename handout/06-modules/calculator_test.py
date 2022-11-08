@@ -19,5 +19,9 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual( 12, mul(2,6))
         self.assertEqual( -3, mul(-1,3))
 
+    def test_div(self):
+        self.assertEqual( 5, div(10,2))
+
+
 if __name__ == '__main__':
     unittest.main()
