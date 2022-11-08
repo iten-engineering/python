@@ -11,3 +11,4 @@ print("Persons:")
 for person in persons:
     person.print_fullname_with_age()
 
+print("person-demo.py: __name__ = ", __name__)

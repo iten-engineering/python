@@ -22,4 +22,9 @@ class Person:
     def print_fullname_with_age(self):
         print(self.fullname(), ", age =", self.age())
 
+print("person.py: __name__ = ", __name__)
 
+if __name__ == '__main__':
+    print("### Meine Tests für die Klasse Person")
+    p = Person("Pipi", "Langstrumpf", "15.10.1970", vip=True)
+    p.print_fullname_with_age()
