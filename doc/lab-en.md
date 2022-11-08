@@ -372,7 +372,7 @@ the valid range from 1 to 6.
 ### Kreis
 - Create the script `kreis.py`.
 - Create the class `Kreis` with the attribute radius.
-- Create the method get_circumference() which returns the circumference (2*PI*radius) of the circle.
+- Create the method get_circumference() which returns the circumference (2 * PI * radius) of the circle.
 - Create the method get_area() which returns the area of the circle (PI * radius^2)
 - Create the print() method that prints the radius, circumference and area to the console.
 - Test the class with several different values.

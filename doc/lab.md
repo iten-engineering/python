@@ -371,7 +371,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
 ### Kreis
 - Erstellen Sie das Script `kreis.py`.
 - Erstellen Sie die Klasse `Kreis` mit dem Attribut radius.
-- Erstellen Sie die Methode get_umfang() die den Umfang (2*PI*radius) des Kreises zurückgibt
+- Erstellen Sie die Methode get_umfang() die den Umfang (2 * PI * radius) des Kreises zurückgibt
 - Erstellen Sie die Methode get_flaeche() die die Kreisfläche (PI * radius^2) zurückgibt
 - Erstellen Sie die Methode print() die den Radius, Umfang und die Fläche auf der Konsole ausgibt.
 - Testen Sie die Klasse mit mehreren verschiedenen Werten.
