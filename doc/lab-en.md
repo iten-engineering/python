@@ -17,7 +17,7 @@
 | **[5. File Input/Output](#5-file-inputoutput)**            | [Names](#Names) - [Books](#Books) |
 | **[6. Modules & Packages](#6-modules--packages)**            | [Calculator](#Calculator) |
 | **[7. Standard Libraries](#7-standard-libraries)**         | [Directory](#Directory) - [Directories](#Directories) - [RegEx](#RegEx) | 
-| **[8. Data Science Libraries](#8-data-science-libraries)** | [Calculations](#Calculations) - [Mathplot](#Mathplot) - [Umsatz (Excel)](#Umsatz) - [Footprint(CSV)](#Footprint) - [Covid (JSON)](#Covid) |
+| **[8. Data Science Libraries](#8-data-science-libraries)** | [Calculations](#Calculations) - [Mathplot](#Mathplot) - [Umsatz (Excel)](#umsatz-excel) - [Footprint(CSV)](#footprint-csv) - [Covid (JSON)](#covid-json) |
 | **[9. Applicaton examples](#9-applicaton-examples)**       | [SciKitLearn](#SciKitLearn) - [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) |
 | **[10. Further exercises](#10-further-exercises)**             | [Tree](#Tree) - [Caesar](#Caesar) - [Schaltjahr](#Schaltjahr) |
 
