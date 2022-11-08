@@ -5,7 +5,7 @@ entries = os.listdir(path)
 
 dirs = []
 files = []
-for entry in os.listdir(path):
+for entry in entries:
     entry_path = path + "/" + entry
     if os.path.isdir(entry_path):
         dirs.append(entry)
