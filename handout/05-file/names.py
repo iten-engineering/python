@@ -15,5 +15,7 @@ with open(out_filename, "w") as f:
         f.write(name)
         f.write('\n')
 
+with open(out_filename, "a") as f:
+    f.write("Zorro")
 
 
