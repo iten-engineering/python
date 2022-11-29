@@ -7,3 +7,6 @@ print(m1)
 
 m2 = "Die {} Teilneher haben {} Uebungen absolviert.".format(tn, n)
 print(m2)
+
+numbers = [1,2,3]
+print ("-".join( map(str,numbers) ) )
