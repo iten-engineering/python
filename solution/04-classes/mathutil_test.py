@@ -1,5 +1,5 @@
 import unittest
-from MathUtil import MathUtil
+from mathutil import MathUtil
 
 class MathUtilTest(unittest.TestCase):
 
