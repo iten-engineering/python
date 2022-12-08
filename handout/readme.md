@@ -21,4 +21,11 @@ Used during the course to upload further scripts, informations and links.
 
 - W3Schools (gute Übersicht)
   https://www.w3schools.com/
-      
+
+
+## Misc
+
+- List initialization
+  https://note.nkmk.me/en/python-list-initialize/
+
+  
