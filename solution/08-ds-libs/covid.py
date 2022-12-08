@@ -9,7 +9,6 @@ with open(file) as f:
 
 x = []
 y = []
-
 for rec in records:
     # skip other regions
     if rec['geoRegion'] != "CH":

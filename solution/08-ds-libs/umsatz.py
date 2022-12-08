@@ -15,6 +15,7 @@ df = pd.read_excel('solution/08-ds-libs/umsatz.xlsx')
 # df = pd.read_excel('umsatz.xlsx')
 print(df)
 
+
 monat = df['Monat'].tolist()
 umsatz= df['Umsatz'].tolist()
 

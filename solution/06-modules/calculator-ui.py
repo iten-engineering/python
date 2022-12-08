@@ -8,7 +8,7 @@ tokens = data.split()
 
 x, op, y  = tokens
 
-map = {"+" : add, "-" : sub, "*" : mul, "/" : div }
+map = {"+" : add, "-" : sub, "*" : mul, "/" : div}
 f = map.get(op)
 
 if f is None:
