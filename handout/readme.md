@@ -31,8 +31,8 @@ Used during the course to upload further scripts, informations and links.
 
 ## Books
 
-- Einführung in Python 3 
-  Bernd Klein, Hanser Verlag
+- Einführung in Python 3<br /> 
+  Bernd Klein, Hanser Verlag<br />
   ISBN 978-3-446-46379-0
 
 ## Misc
