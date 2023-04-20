@@ -22,6 +22,18 @@ Used during the course to upload further scripts, informations and links.
 - W3Schools (gute Übersicht)
   https://www.w3schools.com/
 
+- Python Tutorial (deutsch)
+  https://py-tutorial-de.readthedocs.io/de/python-3.3/
+
+- Python Kurs (deutsch)
+  https://www.python-kurs.eu/python_kurs.php 
+
+
+## Books
+
+- Einführung in Python 3 
+  Bernd Klein, Hanser Verlag
+  ISBN 978-3-446-46379-0
 
 ## Misc
 
