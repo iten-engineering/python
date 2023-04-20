@@ -1,6 +1,5 @@
 
 numbers = []
-
 value = input("Nummer =")
 
 while value != "x":
