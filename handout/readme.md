@@ -4,7 +4,6 @@ Used during the course to upload further scripts, informations and links.
 
 > Note: The content of this folder will be removed after each course.
 
-
 ## Links
 
 - Tiobe Index
@@ -40,4 +39,13 @@ Used during the course to upload further scripts, informations and links.
 - List initialization
   https://note.nkmk.me/en/python-list-initialize/
 
-  
+## JSON
+- Introduction in JSON
+  https://www.json.org/json-en.html
+
+- Einführung in JSON (deutsch)
+  https://www.json.org/json-de.html
+
+- JavaSript Object Notation (JSON)
+  https://de.wikipedia.org/wiki/JavaScript_Object_Notation
+
