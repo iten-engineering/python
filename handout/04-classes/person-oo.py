@@ -22,6 +22,12 @@ class Person:
     def print_fullname_with_age(self):
         print(self.full_name(), ", age =", self.age(), ", vip=", self.vip )
 
+    def print_self(self):
+        print(self)
+
+    def __str__(self):
+        return self.firstname + " " + self.lastname
+
 
 persons = [
     Person("Pipi", "Langstrumpf", "15.10.1970"),
@@ -29,10 +35,9 @@ persons = [
     Person("Max", "Mortiz", "18.11.1966")
 ]
 
-for p in persons:
-    p.print_fullname_with_age()
+# for p in persons:
+#    p.print_fullname_with_age()
 
 robin = Person("Robin", "Müller", "12.05.2007")
 robin.birthday = "01.01.2023"
 robin.vip = True
-robin.print_fullname_with_age()
