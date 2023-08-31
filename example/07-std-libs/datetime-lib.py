@@ -4,22 +4,33 @@
 
 from datetime import date, datetime
 
+# -----------------------------------------------------------------------------
+# date
+# -----------------------------------------------------------------------------
+
 today = date.today()
 
 print(today)
-print(today.year)
-print(today.month)
-print(today.day)
+print(today.day, ".", today.month, ".", today.year, sep="")
 
 today_str = date.strftime(today, "%d.%m.%Y")
 print(today_str)
 
-birthday = datetime.strptime('01.03.2007', "%d.%m.%Y").date()
+# -----------------------------------------------------------------------------
+# datetime
+# -----------------------------------------------------------------------------
+
+now = datetime.now()
+print(now)
+
+birthday = datetime.strptime('01.03.2007', "%d.%m.%Y")
 print(birthday)
 
-age = today - birthday
+age = now - birthday
 print(age)
-print(age.days / 365)
+print(age.days / 365, "years")
+
+
 
 # =============================================================================
 # The end.
