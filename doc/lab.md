@@ -64,7 +64,7 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
 
 ### Fahrenheit
 - Erstellen Sie ein Script `fahrenheit.py` und lesen Sie von der Konsole die Temperatur in Fahrenheit ein.
-- Die eingelesene Zahl ist vom Typ Integer (int). Konvertieren Sie diese in eine Gleitkommazahl (float).
+- Die eingelesene Zahl ist vom Typ String (str). Konvertieren Sie diese in eine Gleitkommazahl (float).
 - Berechnen Sie die Temperatur in Grad Celisus nach der Formel:
   **Grad Celsius = 5 * (Fahrenheit-32) / 9**
 - Geben Sie das Resultat auf der Konsole aus.
