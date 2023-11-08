@@ -16,7 +16,7 @@
 | **[4. File Input/Output](#5-file-inputoutput)**            | [Names](#Names) - [Books](#Books) - [Footprint(CSV)](#footprint-csv) |
 | **[5. Module & Packages](#6-module--packages)**            | [Calculator](#Calculator) |
 | **[6. Standard Libraries](#7-standard-libraries)**         | [Covid (JSON)](#covid-json) - [Directory](#Directory) - [Directories](#Directories) - [RegEx](#RegEx) | 
-| **[7. Data Science Libraries](#8-data-science-libraries)** | [[Mathplot](#Mathplot) - Calculations](#Calculations) - [Umsatz (Excel)](#umsatz-excel) |
+| **[7. Data Science Libraries](#8-data-science-libraries)** | [Mathplot](#Mathplot) - [Calculations](#Calculations) - [Umsatz (Excel)](#umsatz-excel) |
 | **[8. Klassen & Objekte](#4-klassen--objekte)**            | [Kreis](#Kreis) - [Zylinder](#Zylinder) - [Fahrzeug](#Fahrzeug) - [MathUtil](#MathUtil) - [UnitTest](#UnitTest) |
 | **[9. Anwendungsbeispiele](#9-anwendungsbeispiele)**       | [SciKitLearn](#SciKitLearn) - [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) |
 | **[10. Weitere Übungen](#10-weitere-übungen)**             | [Tree](#Tree) - [Caesar](#Caesar) - [Schaltjahr](#Schaltjahr) |
