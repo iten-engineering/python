@@ -4,10 +4,10 @@
 
 **Content**
 - [Handout](handout)
-- [Lab](doc/lab.md) | [Lab English](doc/lab-en.md)
+- [Lab](doc/lab.md) 
 - [Lab Code](lab)
-- [Example Code](example)
 - [Solution Code](solution)
+- [Example Code](example)
 - [Development Notes](doc/dev.md)
 - [Reference](doc/refs.md)
 

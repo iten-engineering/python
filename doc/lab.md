@@ -13,11 +13,11 @@
 |   [3.2 List & Tuples](#32-List--Tuples)                    | [Numbers](#Numbers) - [Filter](#Filter) |
 |   [3.3 Sets](#33-Sets)                                     | [Mengen](#Mengen) |
 |   [3.4 Dictionaries](#34-Dictionaries)                     | [I18N](#I18N) - [Artikel](#Artikel) |
-| **[4. Klassen & Objekte](#4-klassen--objekte)**            | [Kreis](#Kreis) - [Zylinder](#Zylinder) - [Fahrzeug](#Fahrzeug) - [MathUtil](#MathUtil) - [UnitTest](#UnitTest) |
-| **[5. File Input/Output](#5-file-inputoutput)**            | [Names](#Names) - [Books](#Books) |
-| **[6. Module & Packages](#6-module--packages)**            | [Calculator](#Calculator) |
-| **[7. Standard Libraries](#7-standard-libraries)**         | [Directory](#Directory) - [Directories](#Directories) - [RegEx](#RegEx) | 
-| **[8. Data Science Libraries](#8-data-science-libraries)** | [Calculations](#Calculations) - [Mathplot](#Mathplot) - [Umsatz (Excel)](#umsatz-excel) - [Footprint(CSV)](#footprint-csv) - [Covid (JSON)](#covid-json) |
+| **[4. File Input/Output](#5-file-inputoutput)**            | [Names](#Names) - [Books](#Books) - [Footprint(CSV)](#footprint-csv) |
+| **[5. Module & Packages](#6-module--packages)**            | [Calculator](#Calculator) |
+| **[6. Standard Libraries](#7-standard-libraries)**         | [Directory](#Directory) - [Directories](#Directories) - [RegEx](#RegEx)- [Covid (JSON)](#covid-json)  | 
+| **[7. Data Science Libraries](#8-data-science-libraries)** | [[Mathplot](#Mathplot) - Calculations](#Calculations) - [Umsatz (Excel)](#umsatz-excel) |
+| **[8. Klassen & Objekte](#4-klassen--objekte)**            | [Kreis](#Kreis) - [Zylinder](#Zylinder) - [Fahrzeug](#Fahrzeug) - [MathUtil](#MathUtil) - [UnitTest](#UnitTest) |
 | **[9. Anwendungsbeispiele](#9-anwendungsbeispiele)**       | [SciKitLearn](#SciKitLearn) - [Bookservice](#Bookservice) - [HelloStreamlit](#hellostreamlit) - [Sales (Streamlit)](#sales-streamlit) |
 | **[10. Weitere Übungen](#10-weitere-übungen)**             | [Tree](#Tree) - [Caesar](#Caesar) - [Schaltjahr](#Schaltjahr) |
 
@@ -364,9 +364,336 @@ Operatoren, Variablen, Kommentare, Hilfe & Typ Informationen
   {'name': 'Lautsprecher X66-12', 'price': 70.32000000000001}
   ```
 
+## 4. File Input/Output
+
+### Names
+- Erstellen Sie das Script `names.py` und lesen Sie die Textdatei [names.txt](05-file/names.txt) ein.
+- Diese enthält Vornamen in der folgenden Form:
+  ```
+  Elias
+  Theo
+  ...
+  Ida
+  Anna
+  ```
+- Sortieren Sie die Vornamen alphabetisch und speichern Sie diese wieder im Text Format ab.
+- Beispiel `names-sortet.txt`:
+  ```
+  Anna
+  Anton
+  ...
+  Sarah
+  Theo
+  ```
 
 
-## 4. Klassen & Objekte
+### Books
+- Erstellen Sie das Script `books.py` und lesen Sie die Textdatei [books.txt](05-file/books.txt) ein.
+- Diese enthält Bücherdaten in der fogenden Form:
+  ```
+  ISBN
+  Title
+  Author
+  Publisher
+
+  978-0-316-45742-2
+  The Coast-To-Coast Murders
+  James Patterson
+  Little Brown USA
+
+  978-0-525-95498-9
+  ...
+  ```
+- Erstellen Sie nun eine Liste von Einträgen. Jeder Eintrag beinhaltet die Daten eines "Blocks" und ist
+  selber auch wieder eine Liste, wie nachfolgend dargestellt. 
+  ```
+  ['ISBN', 'Title', 'Author', 'Publisher']
+  ['978-0-316-45742-2', 'The Coast-To-Coast Murders', 'James Patterson', 'Little Brown USA']
+  u.s.w.  
+  ```
+- Speichern sie die aufbereiteten Daten im CSV Format ab.
+- Beispiel `books.csv`:
+  ```
+  ISBN,Title,Author,Publisher
+  978-0-316-45742-2,The Coast-To-Coast Murders,James Patterson,Little Brown USA
+  978-0-525-95498-9,The Evening and the Morning,Ken Follett,Penguin LCC US
+  978-1-250-14523-9,All the Devils Are Here,Louise Penny,Macmillan USA
+  ```
+
+### Footprint (CSV)
+
+Laden und Filtern von CSV Daten und Visualisiern als Line Chart mit Hilfe eines Notebooks.
+
+1. Schauen Sie sich die Datei `number-of-earth-all.csv` an. Die erste Spalte enthält die Länder, anschliessend folgt die Kennzahl **Number of Earth** pro Jahr ab 1961.
+
+2. Erstellen Sie das Jupiter Nootebook `footprint.ipynb` und importieren Sie folgende Bibliotheken
+   ```
+   %matplotlib inline
+
+   import pandas as pd
+   import numpy as np
+   import matplotlib.pyplot as plt
+   ```
+   Mit der Angabe `%matplotlib inline` werden die Matplotlib Grafiken in das Notebook eingebettet.
+
+3. Lesen sie die CSV Datei mit den Pandas Befehle pd.`read_csv(...)` in ein DataFrame mit dem Variablen Namen `df` ein und geben Sie die ersten 5 Zeilen mit `print(df.head(5))` aus.
+
+4. Filtern Sie die Daten für die Schweiz mit dem folgenden Befehl und geben Sie die Daten aus:
+   ```
+   df_ch = df.loc[df['Country'] == 'Switzerland']
+   print(df_ch.head(5))
+   ```
+
+5. Als X-Achse sollen wie Jahre dargestellt werden. Filtern sie diese wie folgt:
+   ```
+    x = df_ch.columns.values.tolist()[1:]
+    print("x:", x)
+   ```
+
+6. Als Y Werte werden folgende Daten selektiert:
+   ```
+   y = df_ch.values.tolist()[0][1:]
+   print("y:", y)
+   ```
+
+7. Plotten Sie den Line Chart mit folgendem Commands:
+   ```
+   plt.figure()
+   plt.plot(x,y)
+   plt.show()
+   ```
+
+8. Erstellen Sie einen Titel und beschriften Sie die Y-Achse. 
+
+9. Die X-Achse ist noch nicht ideal beschriftet. Fügen Sie folgenden Code vor dem `plt.show()` Befehl ein:
+   ```
+   plt.xticks(np.arange(0, len(x), 5))
+   ```
+
+10. Führen Sie das Programm nochmals aus und überprüfen Sie Ihr Resultat.
+
+
+## 5. Module & Packages
+
+### Calculator
+- Erstellen Sie das Modul `calculator.py` mit folgenden Methoden:
+  - add(x, y) für die Addition x + y
+  - sub(x, y) für die Subtraktion x - y
+  - mul(x, y) für die Mulitiplikation x * y
+  - div(x, y) für die Division x / y
+- Erstellen Sie das Script 'calculator-ui.py' dass eine Rechnung einliest, ausführt und das Resultat anzeigt. 
+  Dazu werden die Operationen aus dem calculator Modul importiert.  
+- Als Eingabe wird ein String eingelesen mit der Operation und den Operanden, 
+  wie zum Beispiel `5 + 2` oder `7 / 3`.
+- Fangen Sie folgende Fehler ab und geben Sie eine entsprechende Meldung aus: 
+  - Ungültier Operator
+  - Divison durch 0
+- Beispiele:
+  ```
+  Calculate: 7 * 3
+  21.0
+  
+  Calculate: 5 = 6
+  Unknown operator
+  
+  Calculate: 13 / 0
+  Division by zero    
+  ```
+ 
+## 6. Standard Libraries
+
+### Covid (JSON)
+
+Laden von JSON Daten, Filter der Covid Zahlen für die gesammte Schweiz und Visualiserung als Line Chart.
+
+1. Schauen Sie sich die Datei `COVID19Cases_geoRegion.json` im VS Code an. Uns interessieren die drei folgenden Felder:
+- geoRegion
+- datum
+- entries
+
+2. Erstellen Sie ein Script `covid.py` und importieren Sie folgende Bibliotheken
+   ```
+   import json
+   import matplotlib.pyplot as plt
+   import numpy as np
+   import pandas as pd
+   ```
+3. Lesen sie die JSON Datei mit den Befehle `json.load(...)` innerhalb eines `with` Blocks in die Variable `records` ein.
+
+4. Erstellen Sie zwei leere listen für die X- und Y-Achsenwerte.
+
+5. Iterieren Sie über alle Records und filtern Sie die  Werte aus der `geoRegion` "CH". Das Feld `datum` wird zur Liste für die X-Achse hinzugefügt. Das Feld `entries` kommt in die Liste für die Y-Achse.
+
+6. Erstellen Sie einen plot mit der Matplotlib. Die X-Achse können sie mit folgendem Befehl optimieren:
+   ```
+   plt.xticks(np.arange(0, len(x)+1, 80))
+   ```
+
+7. Speichern Sie die Grafik als PNG Datei.
+
+8. Führen Sie das Programm nochmals aus und überprüfen Sie Ihr Resultat.
+
+
+### Directory
+- Erstellen Sie das Script `dir.py` dass den Inhalt des aktuellen Verzeichnisses ausgeben soll.
+- Verwenden Sie dazu die Methode `os.getcwd()` um den Pfad zum aktuellen Verzeichnis zu erhalten.
+- Anschliessend können Sie mit der Methode `os.listdir()` den Inhalt des Verzeichnis auslesen
+- Erstellen Sie nun zwei leere Listen mit den Namen `dirs` und `files`
+- Die mit `os.listdir()` erhaltenen Einträge sollen nun in die beiden Listen aufgeteilt werden.
+- Zur Bestimmung ob es sich um eine  Datei oder ein Verzeichnis handelt, verwenden Sie die Methonden `os.path.isdir(...)` und `os.path.isfile(...)`:
+  - Beachten Sie dass für die Überprüfung der vollständige Pfad- und  Dateiname angegeben werden muss. 
+  - Sie müssen also eine neue Variable mit Pfad und Eintrag aus `os.listdir()` erstellen, bevor sie die Prüfung mit `os.path.isdir(...)` / `os.path.isfile(...)` machen.
+- Geben Sie die Verzeichnisse und Dateien auf der Console aus, wie im folgenden Beispiel dargestellt:
+  ```
+  Directories:
+  - .git
+  - doc
+  - example
+  - handout
+  - lab
+  - solution
+  Files:
+  - .gitignore
+  - LICENSE
+  - python.iml
+  - README.md
+  ```
+
+### Directories
+- Erstellen Sie das Script `dirs.py` dass mit Hilfe einer Rekursion den Inhalt des
+  aktuellen Verzeichnisses ausgibt.
+- Verwenden Sie dazu die Methoden `os.listdir()`, `os.path.isdir()` und `os.path.isfile()` 
+  der os Bibliothek.
+- Geben Sie die Datei- und Verzeichnisnamen verschachtelt aus, wie im folgenden Beispiel
+  dargestellt:
+  ```
+  bookservice
+    books.py
+    bookservice.py
+    debug.bat
+    debug.sh
+    run.bat
+    run.sh
+    static
+      404.html
+      index.html
+  movies
+    movieservice.py
+    run.bat
+    run.sh
+    model
+      model.py
+      imdb
+        imdb_mlp.pkl
+       imdb_tfidf.pkl
+    static
+      index.html
+  scikit
+    plot_cluster_iris.ipynb
+    plot_iris_dataset.ipynb
+    plot_pca_iris.ipynb
+    references.md
+  ```
+  
+### RegEx
+Schauen Sie sich die Regular Expression Beispiele aus den Kursunterlagen oder den folgenden Tutorials 
+an und probieren Sie einige davon aus:
+- https://developers.google.com/edu/python/regular-expressions
+- https://learnbyexample.github.io/python-regex-cheatsheet 
+- https://docs.python.org/3/howto/regex.html
+
+  
+## 7. Data Science Libraries
+
+### Mathplot
+Arbeiten Sie das Jupiter Notebook `mathplot-lib.ipynb` (im Verzeichnis lab/08-ds-libs) 
+durch und lernen Sie einige Möglichkeiten der Mathplot Bibliothek kennen.
+
+### Calculations
+Erstellen Sie ein Script `calculations.py` und importieren Sie die numpy Biblothek.
+Führen Sie anschliessend folgenden Aufgaben aus:
+
+1. Berechnungen
+   - Erstellen Sie die folgenden drei Numpy Arrays.
+     - a = [20,30,40,50]
+     - b = [10,15,10,75]
+     - c = [17,12,-3,52]
+   - Berechnen Sie elementweise: 
+     - x = a - b 
+     - y = x + c 
+   - Geben Sie die Resultate auf der Konsole aus. 
+
+2. 6er Reihe
+   - Erstellen Sie einen Numpy Array mit den Werten der 6er Reihe 
+     (verwenden Sie dazu die Range Funktion).
+   - Berechnen Sie folgende Werte und geben Sie diese auf der Konsole aus:
+     - Minimum
+     - Maximum
+     - Mittelwert
+     - Standardabweichung  
+
+3. Lottozahlen
+   - Erstellen Sie mit der Numpy Funktion ranom.randint() sechs Zufallszahlen 
+     im Bereich von 1 bis 45.
+   - Jede Zufallszahl darf nur einmal vorkommen in der generierten Liste.
+   - Geben Sie die Zahlen auf der Konsole aus.
+   
+Beispiel Ausgabe:
+```
+Berechnungen:
+x: [ 10  15  30 -25]
+y: [27 27 27 27]
+
+6er Reihe: [ 6 12 18 24 30 36 42 48 54 60]
+Minimum: 6
+Maximum: 60
+Mittelwert: 33.0
+Standardabweichung: 17.233687939614086
+
+Lottozahlen:
+{34, 3, 8, 43, 18, 25}
+```
+
+### Umsatz (Excel)
+
+Laden von Excel Daten und Visualiserung als Bar Plot.
+
+1. Schauen Sie sich die Datei `umsatz.xlsx` an. Sie hat zwei Spalten. Die erste enthält die Monate, die zweite den Umsatz des entsprechenden Monats.
+
+2. Erstellen Sie ein Script `umsatz.py` und importieren Sie folgende Bibliotheken
+   ```
+   import numpy as np
+   import pandas as pd
+   import matplotlib.pyplot as plt
+   ```
+3. Lesen sie die Excel Datei mit den Pandas Befehle pd.`read_excel(...)` in ein DataFrame mit dem Variablen Namen `df` ein und geben Sie dieses mit `print()` aus.
+
+4. Erstellen Sie eine Liste mit den Monaten und eine Liste mit den Umsätzen mit folgenden Code:
+   ```
+   monat = df['Monat'].tolist()
+   umsatz= df['Umsatz'].tolist()
+   ```
+5. Geben Sie die Monate und die Umsätze mit `print()` aus. Stimmen die Daten mit den Einträgen im Excel überein. 
+
+6. Nun wollen wir den Barchart erstellen. Auf der X-Achse sollen die Monate erscheinen, auf der Y-Achse die Umsätze. Fügen Sie folgenden Code ein:
+   ```
+   xpos = np.arange(len(monat))
+   plt.bar(xpos, umsatz, align='center', alpha=0.5)
+   
+   plt.show()
+   ```
+7. Führen Sie den Code aus. Die Monate sind noch nicht
+mit den Namen beschriftet, sondern nur mit der Nummer. 
+Ergänzen sie den Code nach `plt.bar()` wie folgt und führen Sie den Code anschliessend nochmals aus.
+   ```
+   plt.xticks(xpos, monat)
+   ```
+8. Fügen Sie der Grafik einen Titel bei und beschriften Sie die X- und Y-Achse. Benutzen Sie dazu die Befehle `plt.title()`, `plt.xlabel()` und `plt.ylabel()`. 
+
+9. Führen Sie das Programm nochmals aus und überprüfen Sie Ihr Resultat.
+
+
+## 8. Klassen & Objekte
 
 ### Kreis
 - Erstellen Sie das Script `kreis.py`.
@@ -483,334 +810,6 @@ Per default sind im VS Code Unit Tests ausgeschaltet. Diese müssen sie zuerst a
 - Erstellen Sie dazu die Klasse `MathUtilTest` und definieren Sie entsprechende Testmethoden zum überprüfen
   der beiden Methoden `min()` und `max()`.
 - Führen Sie den Test aus der Entwicklungsumgebung aus und überrüfen Sie die Resultate.
-
-
-## 5. File Input/Output
-
-### Names
-- Erstellen Sie das Script `names.py` und lesen Sie die Textdatei [names.txt](05-file/names.txt) ein.
-- Diese enthält Vornamen in der folgenden Form:
-  ```
-  Elias
-  Theo
-  ...
-  Ida
-  Anna
-  ```
-- Sortieren Sie die Vornamen alphabetisch und speichern Sie diese wieder im Text Format ab.
-- Beispiel `names-sortet.txt`:
-  ```
-  Anna
-  Anton
-  ...
-  Sarah
-  Theo
-  ```
-
-
-### Books
-- Erstellen Sie das Script `books.py` und lesen Sie die Textdatei [books.txt](05-file/books.txt) ein.
-- Diese enthält Bücherdaten in der fogenden Form:
-  ```
-  ISBN
-  Title
-  Author
-  Publisher
-
-  978-0-316-45742-2
-  The Coast-To-Coast Murders
-  James Patterson
-  Little Brown USA
-
-  978-0-525-95498-9
-  ...
-  ```
-- Erstellen Sie nun eine Liste von Einträgen. Jeder Eintrag beinhaltet die Daten eines "Blocks" und ist
-  selber auch wieder eine Liste, wie nachfolgend dargestellt. 
-  ```
-  ['ISBN', 'Title', 'Author', 'Publisher']
-  ['978-0-316-45742-2', 'The Coast-To-Coast Murders', 'James Patterson', 'Little Brown USA']
-  u.s.w.  
-  ```
-- Speichern sie die aufbereiteten Daten im CSV Format ab.
-- Beispiel `books.csv`:
-  ```
-  ISBN,Title,Author,Publisher
-  978-0-316-45742-2,The Coast-To-Coast Murders,James Patterson,Little Brown USA
-  978-0-525-95498-9,The Evening and the Morning,Ken Follett,Penguin LCC US
-  978-1-250-14523-9,All the Devils Are Here,Louise Penny,Macmillan USA
-  ```
-
-## 6. Module & Packages
-
-### Calculator
-- Erstellen Sie das Modul `calculator.py` mit folgenden Methoden:
-  - add(x, y) für die Addition x + y
-  - sub(x, y) für die Subtraktion x - y
-  - mul(x, y) für die Mulitiplikation x * y
-  - div(x, y) für die Division x / y
-- Erstellen Sie das Script 'calculator-ui.py' dass eine Rechnung einliest, ausführt und das Resultat anzeigt. 
-  Dazu werden die Operationen aus dem calculator Modul importiert.  
-- Als Eingabe wird ein String eingelesen mit der Operation und den Operanden, 
-  wie zum Beispiel `5 + 2` oder `7 / 3`.
-- Fangen Sie folgende Fehler ab und geben Sie eine entsprechende Meldung aus: 
-  - Ungültier Operator
-  - Divison durch 0
-- Beispiele:
-  ```
-  Calculate: 7 * 3
-  21.0
-  
-  Calculate: 5 = 6
-  Unknown operator
-  
-  Calculate: 13 / 0
-  Division by zero    
-  ```
- 
-## 7. Standard Libraries
-
-### Directory
-- Erstellen Sie das Script `dir.py` dass den Inhalt des aktuellen Verzeichnisses ausgeben soll.
-- Verwenden Sie dazu die Methode `os.getcwd()` um den Pfad zum aktuellen Verzeichnis zu erhalten.
-- Anschliessend können Sie mit der Methode `os.listdir()` den Inhalt des Verzeichnis auslesen
-- Erstellen Sie nun zwei leere Listen mit den Namen `dirs` und `files`
-- Die mit `os.listdir()` erhaltenen Einträge sollen nun in die beiden Listen aufgeteilt werden.
-- Zur Bestimmung ob es sich um eine  Datei oder ein Verzeichnis handelt, verwenden Sie die Methonden `os.path.isdir(...)` und `os.path.isfile(...)`:
-  - Beachten Sie dass für die Überprüfung der vollständige Pfad- und  Dateiname angegeben werden muss. 
-  - Sie müssen also eine neue Variable mit Pfad und Eintrag aus `os.listdir()` erstellen, bevor sie die Prüfung mit `os.path.isdir(...)` / `os.path.isfile(...)` machen.
-- Geben Sie die Verzeichnisse und Dateien auf der Console aus, wie im folgenden Beispiel dargestellt:
-  ```
-  Directories:
-  - .git
-  - doc
-  - example
-  - handout
-  - lab
-  - solution
-  Files:
-  - .gitignore
-  - LICENSE
-  - python.iml
-  - README.md
-  ```
-
-### Directories
-- Erstellen Sie das Script `dirs.py` dass mit Hilfe einer Rekursion den Inhalt des
-  aktuellen Verzeichnisses ausgibt.
-- Verwenden Sie dazu die Methoden `os.listdir()`, `os.path.isdir()` und `os.path.isfile()` 
-  der os Bibliothek.
-- Geben Sie die Datei- und Verzeichnisnamen verschachtelt aus, wie im folgenden Beispiel
-  dargestellt:
-  ```
-  bookservice
-    books.py
-    bookservice.py
-    debug.bat
-    debug.sh
-    run.bat
-    run.sh
-    static
-      404.html
-      index.html
-  movies
-    movieservice.py
-    run.bat
-    run.sh
-    model
-      model.py
-      imdb
-        imdb_mlp.pkl
-       imdb_tfidf.pkl
-    static
-      index.html
-  scikit
-    plot_cluster_iris.ipynb
-    plot_iris_dataset.ipynb
-    plot_pca_iris.ipynb
-    references.md
-  ```
-  
-### RegEx
-Schauen Sie sich die Regular Expression Beispiele aus den Kursunterlagen oder den folgenden Tutorials 
-an und probieren Sie einige davon aus:
-- https://developers.google.com/edu/python/regular-expressions
-- https://learnbyexample.github.io/python-regex-cheatsheet 
-- https://docs.python.org/3/howto/regex.html
-
-  
-## 8. Data Science Libraries
-
-### Calculations
-Erstellen Sie ein Script `calculations.py` und importieren Sie die numpy Biblothek.
-Führen Sie anschliessend folgenden Aufgaben aus:
-
-1. Berechnungen
-   - Erstellen Sie die folgenden drei Numpy Arrays.
-     - a = [20,30,40,50]
-     - b = [10,15,10,75]
-     - c = [17,12,-3,52]
-   - Berechnen Sie elementweise: 
-     - x = a - b 
-     - y = x + c 
-   - Geben Sie die Resultate auf der Konsole aus. 
-
-2. 6er Reihe
-   - Erstellen Sie einen Numpy Array mit den Werten der 6er Reihe 
-     (verwenden Sie dazu die Range Funktion).
-   - Berechnen Sie folgende Werte und geben Sie diese auf der Konsole aus:
-     - Minimum
-     - Maximum
-     - Mittelwert
-     - Standardabweichung  
-
-3. Lottozahlen
-   - Erstellen Sie mit der Numpy Funktion ranom.randint() sechs Zufallszahlen 
-     im Bereich von 1 bis 45.
-   - Jede Zufallszahl darf nur einmal vorkommen in der generierten Liste.
-   - Geben Sie die Zahlen auf der Konsole aus.
-   
-Beispiel Ausgabe:
-```
-Berechnungen:
-x: [ 10  15  30 -25]
-y: [27 27 27 27]
-
-6er Reihe: [ 6 12 18 24 30 36 42 48 54 60]
-Minimum: 6
-Maximum: 60
-Mittelwert: 33.0
-Standardabweichung: 17.233687939614086
-
-Lottozahlen:
-{34, 3, 8, 43, 18, 25}
-```
-
-### Mathplot
-Arbeiten Sie das Jupiter Notebook `mathplot-lib.ipynb` (im Verzeichnis lab/08-ds-libs) 
-durch und lernen Sie einige Möglichkeiten der Mathplot Bibliothek kennen.
-
-
-### Umsatz (Excel)
-
-Laden von Excel Daten und Visualiserung als Bar Plot.
-
-1. Schauen Sie sich die Datei `umsatz.xlsx` an. Sie hat zwei Spalten. Die erste enthält die Monate, die zweite den Umsatz des entsprechenden Monats.
-
-2. Erstellen Sie ein Script `umsatz.py` und importieren Sie folgende Bibliotheken
-   ```
-   import numpy as np
-   import pandas as pd
-   import matplotlib.pyplot as plt
-   ```
-3. Lesen sie die Excel Datei mit den Pandas Befehle pd.`read_excel(...)` in ein DataFrame mit dem Variablen Namen `df` ein und geben Sie dieses mit `print()` aus.
-
-4. Erstellen Sie eine Liste mit den Monaten und eine Liste mit den Umsätzen mit folgenden Code:
-   ```
-   monat = df['Monat'].tolist()
-   umsatz= df['Umsatz'].tolist()
-   ```
-5. Geben Sie die Monate und die Umsätze mit `print()` aus. Stimmen die Daten mit den Einträgen im Excel überein. 
-
-6. Nun wollen wir den Barchart erstellen. Auf der X-Achse sollen die Monate erscheinen, auf der Y-Achse die Umsätze. Fügen Sie folgenden Code ein:
-   ```
-   xpos = np.arange(len(monat))
-   plt.bar(xpos, umsatz, align='center', alpha=0.5)
-   
-   plt.show()
-   ```
-7. Führen Sie den Code aus. Die Monate sind noch nicht
-mit den Namen beschriftet, sondern nur mit der Nummer. 
-Ergänzen sie den Code nach `plt.bar()` wie folgt und führen Sie den Code anschliessend nochmals aus.
-   ```
-   plt.xticks(xpos, monat)
-   ```
-8. Fügen Sie der Grafik einen Titel bei und beschriften Sie die X- und Y-Achse. Benutzen Sie dazu die Befehle `plt.title()`, `plt.xlabel()` und `plt.ylabel()`. 
-
-9. Führen Sie das Programm nochmals aus und überprüfen Sie Ihr Resultat.
-
-### Footprint (CSV)
-
-Laden und Filtern von CSV Daten und Visualisiern als Line Chart mit Hilfe eines Notebooks.
-
-1. Schauen Sie sich die Datei `number-of-earth-all.csv` an. Die erste Spalte enthält die Länder, anschliessend folgt die Kennzahl **Number of Earth** pro Jahr ab 1961.
-
-2. Erstellen Sie das Jupiter Nootebook `footprint.ipynb` und importieren Sie folgende Bibliotheken
-   ```
-   %matplotlib inline
-
-   import pandas as pd
-   import numpy as np
-   import matplotlib.pyplot as plt
-   ```
-   Mit der Angabe `%matplotlib inline` werden die Matplotlib Grafiken in das Notebook eingebettet.
-
-3. Lesen sie die CSV Datei mit den Pandas Befehle pd.`read_csv(...)` in ein DataFrame mit dem Variablen Namen `df` ein und geben Sie die ersten 5 Zeilen mit `print(df.head(5))` aus.
-
-4. Filtern Sie die Daten für die Schweiz mit dem folgenden Befehl und geben Sie die Daten aus:
-   ```
-   df_ch = df.loc[df['Country'] == 'Switzerland']
-   print(df_ch.head(5))
-   ```
-
-5. Als X-Achse sollen wie Jahre dargestellt werden. Filtern sie diese wie folgt:
-   ```
-    x = df_ch.columns.values.tolist()[1:]
-    print("x:", x)
-   ```
-
-6. Als Y Werte werden folgende Daten selektiert:
-   ```
-   y = df_ch.values.tolist()[0][1:]
-   print("y:", y)
-   ```
-
-7. Plotten Sie den Line Chart mit folgendem Commands:
-   ```
-   plt.figure()
-   plt.plot(x,y)
-   plt.show()
-   ```
-
-8. Erstellen Sie einen Titel und beschriften Sie die Y-Achse. 
-
-9. Die X-Achse ist noch nicht ideal beschriftet. Fügen Sie folgenden Code vor dem `plt.show()` Befehl ein:
-   ```
-   plt.xticks(np.arange(0, len(x), 5))
-   ```
-
-10. Führen Sie das Programm nochmals aus und überprüfen Sie Ihr Resultat.
-
-### Covid (JSON)
-
-Laden von JSON Daten, Filter der Covid Zahlen für die gesammte Schweiz und Visualiserung als Line Chart.
-
-1. Schauen Sie sich die Datei `COVID19Cases_geoRegion.json` im VS Code an. Uns interessieren die drei folgenden Felder:
-- geoRegion
-- datum
-- entries
-
-2. Erstellen Sie ein Script `covid.py` und importieren Sie folgende Bibliotheken
-   ```
-   import json
-   import matplotlib.pyplot as plt
-   import numpy as np
-   import pandas as pd
-   ```
-3. Lesen sie die JSON Datei mit den Befehle `json.load(...)` innerhalb eines `with` Blocks in die Variable `records` ein.
-
-4. Erstellen Sie zwei leere listen für die X- und Y-Achsenwerte.
-
-5. Iterieren Sie über alle Records und filtern Sie die  Werte aus der `geoRegion` "CH". Das Feld `datum` wird zur Liste für die X-Achse hinzugefügt. Das Feld `entries` kommt in die Liste für die Y-Achse.
-
-6. Erstellen Sie einen plot mit der Matplotlib. Die X-Achse können sie mit folgendem Befehl optimieren:
-   ```
-   plt.xticks(np.arange(0, len(x)+1, 80))
-   ```
-
-7. Speichern Sie die Grafik als PNG Datei.
-
-8. Führen Sie das Programm nochmals aus und überprüfen Sie Ihr Resultat.
 
 
 ## 9. Anwendungsbeispiele
