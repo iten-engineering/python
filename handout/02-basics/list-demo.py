@@ -9,3 +9,4 @@ print(lotto)
 
 print(5 in lotto)
 print(-5 in lotto)
+
