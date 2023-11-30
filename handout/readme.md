@@ -28,6 +28,11 @@ Used during the course to upload further scripts, informations and links.
   https://www.python-kurs.eu/python_kurs.php 
 
 
+## PEP
+
+- Python Style Guide
+  https://peps.python.org/pep-0008/
+  
 ## Books
 
 - Einführung in Python 3<br /> 
