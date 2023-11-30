@@ -32,6 +32,9 @@ Used during the course to upload further scripts, informations and links.
 
 - Python Style Guide
   https://peps.python.org/pep-0008/
+
+- Python Type Hints
+  https://peps.python.org/pep-0484/
   
 ## Books
 
