@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read excel
-df = pd.read_excel('solution/08-ds-libs/umsatz.xlsx')
+df = pd.read_excel('solution/07-ds-libs/umsatz.xlsx')
 # df = pd.read_excel('umsatz.xlsx')
 print(df)
 
