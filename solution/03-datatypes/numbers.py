@@ -7,7 +7,7 @@ print(numbers[0])       # first
 print(numbers[-1])      # last
 
 print(numbers[:2])      # first two elements
-print( numbers[-2:] )   # last two elements
+print(numbers[-2:])     # last two elements
 
 print(len(numbers))     # length
 print(min(numbers))     # minimum

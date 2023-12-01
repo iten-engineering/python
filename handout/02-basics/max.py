@@ -16,3 +16,6 @@ def get_person():
 result = get_person()
 print(result)
 
+x, y = [12, 24]
+print(x, y)
+
