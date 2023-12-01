@@ -23,7 +23,7 @@ class Person:
 persons = [
     Person("Pipi","Langstrumpf", "15.10.1970", vip=True),
     Person("Peter", "Pan", "12.12.2012"),
-    Person("Max", "Moritz", "18.11.1966")
+    Person("Max", "Moritz", "01.02.1966")
 ]
 
 for person in persons:
