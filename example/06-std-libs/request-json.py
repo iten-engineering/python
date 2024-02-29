@@ -2,14 +2,10 @@ import requests
 
 url = "http://jsonplaceholder.typicode.com/posts"
 
-proxies = {
-    "http" : "http://prp04.admin.ch:8080",
-    "https": "http://prp04.admin.ch:8080"
-}
 
 try:
     # get request to the url
-    response = requests.get(url, proxies=proxies)
+    response = requests.get(url)
 
     # check response status code
     if response.status_code ==200:
