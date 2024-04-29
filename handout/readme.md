@@ -15,6 +15,9 @@ Used during the course to upload further scripts, informations and links.
 - Python Doc
   https://docs.python.org/3/ 
 
+- Python Built-in Exceptions
+  https://docs.python.org/3/library/exceptions.html#exception-hierarchy
+
 - Real Python (gute Tutorials)
   https://realpython.com/
 
