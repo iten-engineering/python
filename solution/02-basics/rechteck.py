@@ -1,6 +1,9 @@
 
-length = 10
-width = 5
+value = input("length = ")
+length = float(value)
+
+value = input("width = ")
+width = float(value)
 
 size = 2 * (length + width)
 area = length * width
