@@ -1,6 +1,6 @@
 import xmltodict
 
-filename = "handout/04-file/persons.xml"
+filename = "handout/04-file-xml/persons.xml"
 
 # Load the XML file as a dictionary
 with open(filename, 'r') as xml_file:

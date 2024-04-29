@@ -1,11 +1,12 @@
 import xmltodict
 
-filename = "handout/04-file/person.xml"
+filename = "handout/04-file-xml/person.xml"
 
 # Load the XML file and convert it to a dictionary
 with open(filename, 'r') as f:
     xml_data = f.read()
     data_dict = xmltodict.parse(xml_data)
+
 
 # Access the firstname and email values from the dictionary
 firstname = data_dict['person']['firstname']
