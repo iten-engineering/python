@@ -22,7 +22,6 @@ class Books:
             }
         }
 
-
     def get_books(self):
         return self.books
 
@@ -33,3 +32,7 @@ class Books:
         return xmltodict.unparse(
             {"books": {"book": [{"@isbn": isbn, "title": info["title"], "author": info["author"], "publisher": info["publisher"]} for isbn, info in self.books.items()]}})    
 
+if __name__ == "__main__":
+    books = Books()
+    print(books.get_book("978-1-250-14523-9"))
+    print(books.get_books_xml())
