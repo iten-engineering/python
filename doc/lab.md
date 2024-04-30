@@ -506,7 +506,7 @@ Laden und Filtern von CSV Daten und Visualisiern als Line Chart mit Hilfe eines 
 
 Laden von JSON Daten, Filter der Covid Zahlen für die gesammte Schweiz und Visualiserung als Line Chart.
 
-1. Schauen Sie sich die Datei `COVID19Cases_geoRegion.json` im VS Code an. Uns interessieren die drei folgenden Felder:
+1. Schauen Sie sich die Datei `covid.json` im VS Code an. Uns interessieren die drei folgenden Felder:
 - geoRegion
 - datum
 - entries

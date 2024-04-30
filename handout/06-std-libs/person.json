@@ -1,0 +1,17 @@
+{
+    "name": {
+        "firsnames": [
+            "Jane",
+            "Anna"
+        ],
+        "lastname": "Smith"
+    },
+    "age": 25,
+    "city": "Los Angeles",
+    "address": {
+        "street": "Bernstrasse",
+        "nr": 7,
+        "city": "Basel",
+        "country": null
+    }
+}
