@@ -516,7 +516,6 @@ Laden von JSON Daten, Filter der Covid Zahlen für die gesammte Schweiz und Visu
    import json
    import matplotlib.pyplot as plt
    import numpy as np
-   import pandas as pd
    ```
 3. Lesen sie die JSON Datei mit den Befehle `json.load(...)` innerhalb eines `with` Blocks in die Variable `records` ein.
 
