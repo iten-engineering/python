@@ -6,10 +6,17 @@ from calculator import add, sub, mul, div
 data = input("Calculate = ")
 x, op, y = data.split()
 
-map = {"+":add, "-":sub, "*":mul, "/":div, "&":add,
-       "add": add}
+op_map = {
+    "+":add, 
+    "-":sub, 
+    "*":mul, 
+    "/":div, 
+    "&":add,
+    "add": add}
 
-f = map.get(op)
+
+# f = op_map[op]    # wirft Exception falls key nicht vorhanden in map
+f = op_map.get(op)  # gibt None zurück, falls key nicht existiert
 
 if f is None:
     print(f"Unkown operator: {op}")
