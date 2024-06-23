@@ -1,0 +1,16 @@
+name: intro
+channels:  
+    - conda-forge
+dependencies:
+  - python==3.10.*
+  - conda==23.*
+  - pip==23.*
+  - pip:
+      - ipykernel
+      - numpy
+      - pandas
+      - matplotlib
+      - openpyxl
+      - streamlit
+      - Flask
+      - scikit-learn
