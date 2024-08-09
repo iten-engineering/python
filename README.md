@@ -6,6 +6,7 @@
 - [Handout](handout)
 - [Lab](doc/lab.md) 
 - [Lab Code](lab)
+- [Solution Code](solution)
 - [Example Code](example)
 - [Development Notes](doc/dev.md)
 - [Reference](doc/refs.md)
