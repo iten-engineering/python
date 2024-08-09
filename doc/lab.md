@@ -848,6 +848,11 @@ Kennenlernen des streamlit Framework.
     streamlit run hello-streamlit.py 
    ```
 
+   Falls der Befehl nicht erkannt wird, kann die Anwendung auf wie folgt gestartet werden:
+   ```
+    python -m streamlit run hello-streamlit.py 
+   ```
+
 4. Nach einem erfolgreichen Start wird eine URL angezeigt. Öffnen Sie einen Browser und schauen Sie sich die Anwendung an.
 
 5. Ändern Sie etwas im Test und drücken sie den Refresh Button im Browser. Die Anpassung sollte jetzt ersichtlich sein.
