@@ -14,9 +14,6 @@ i18n_file = "handout/03-datatypes/i18n.json"
 with open(i18n_file, 'r') as json_file:
     i18n = json.load(json_file)
 
-print(i18n["de"])
-print(i18n["en"])
-
 name = input("Name = ")
 lang  = input("Sprachcode = ")
 
