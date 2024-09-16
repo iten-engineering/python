@@ -1,13 +1,13 @@
 import json
 
-"""
+
 i18n = {
     "de": "Guten morgen",
     "fr": "Bon jour",
     "it": "Buongiorno",
     "en": "Good morning"
 }
-"""
+
 
 i18n_file = "handout/03-datatypes/i18n.json"
 

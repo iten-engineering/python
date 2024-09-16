@@ -20,7 +20,6 @@ class Queue(object):
 queue = Queue()
 
 queue.send("Hello")
-print( queue.receive())
 queue.send("World")
 
 print( queue.receive())
