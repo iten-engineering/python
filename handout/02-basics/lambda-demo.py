@@ -20,4 +20,3 @@ print( apply(numbers, abs))
 print(triple())
 
 
-

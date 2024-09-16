@@ -15,9 +15,10 @@ class Queue(object):
                 return self.messages.pop()
             return None
 
-queue = Queue()
 
 """
+queue = Queue()
+
 queue.send("Hello")
 print( queue.receive())
 queue.send("World")
@@ -45,7 +46,7 @@ def receiver(queue, timeout):
 
 
 queue = Queue()
-sender_thread   = threading.Thread(target=sender, args=(queue,1000))
+sender_thread   = threading.Thread(target=sender,   args=(queue,1000))
 receiver_thread = threading.Thread(target=receiver, args=(queue,1000))
 
 sender_thread.start()
