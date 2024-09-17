@@ -1,13 +1,8 @@
-import json
+import json, os
 
 
-i18n = {
-    "de": "Guten morgen",
-    "fr": "Bon jour",
-    "it": "Buongiorno",
-    "en": "Good morning"
-}
-
+print("Current Working Directory:", os.getcwd())
+exit()
 
 i18n_file = "handout/03-datatypes/i18n.json"
 

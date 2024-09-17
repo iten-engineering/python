@@ -16,19 +16,6 @@ class Queue(object):
             return None
 
 
-"""
-queue = Queue()
-
-queue.send("Hello")
-queue.send("World")
-
-print( queue.receive())
-print( queue.receive())
-
-exit()
-"""
-
-
 def sender(queue, timeout):
     for i in range(10):
         msg = "Message" + str(i)
@@ -46,7 +33,7 @@ def receiver(queue, timeout):
 
 
 queue = Queue()
-sender_thread   = threading.Thread(target=sender,   args=(queue,1))
+sender_thread   = threading.Thread(target=sender,   args=(queue,2))
 receiver_thread = threading.Thread(target=receiver, args=(queue,1))
 
 sender_thread.start()
