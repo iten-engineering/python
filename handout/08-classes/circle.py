@@ -22,5 +22,6 @@ class Circle:
 
 circles = [Circle(4), Circle(7), Circle(9)]
 for circle in circles:
+    print(circle.radius)
     circle.print()
 
