@@ -676,17 +676,12 @@ Laden von Excel Daten und Visualiserung als Bar Plot.
 
 6. Nun wollen wir den Barchart erstellen. Auf der X-Achse sollen die Monate erscheinen, auf der Y-Achse die Umsätze. Fügen Sie folgenden Code ein:
    ```
-   xpos = np.arange(len(monat))
-   plt.bar(xpos, umsatz, align='center', alpha=0.5)
+   plt.bar(monat, umsatz, align='center', alpha=0.5)
    
    plt.show()
    ```
-7. Führen Sie den Code aus. Die Monate sind noch nicht
-mit den Namen beschriftet, sondern nur mit der Nummer. 
-Ergänzen sie den Code nach `plt.bar()` wie folgt und führen Sie den Code anschliessend nochmals aus.
-   ```
-   plt.xticks(xpos, monat)
-   ```
+7. Führen Sie den Code aus.
+
 8. Fügen Sie der Grafik einen Titel bei und beschriften Sie die X- und Y-Achse. Benutzen Sie dazu die Befehle `plt.title()`, `plt.xlabel()` und `plt.ylabel()`. 
 
 9. Führen Sie das Programm nochmals aus und überprüfen Sie Ihr Resultat.
