@@ -4,7 +4,6 @@ import numpy as np
 
 
 filename = "handout/06-std-libs/covid.json"
-
 with open(filename, "r") as f:
     records = json.load(f)
 
@@ -22,7 +21,5 @@ plt.xticks(np.arange(0, len(x)+1, 80))
 plt.plot(x,y)
 plt.title("Covid Schweiz")
 plt.ylabel("Anzahl registrierte Fälle")
-
-plt.savefig("covid.png")
-
+# plt.savefig("covid.png")
 plt.show()
