@@ -14,7 +14,7 @@ print("y:", y)
 
 
 # Part II - 6er Reihen
-r6 = np.array(range(6,66,6))
+r6 = np.array(range(6,61,6))
 print("\n6er Reihe:", r6)
 
 print("Minimum:",np.min(r6))
