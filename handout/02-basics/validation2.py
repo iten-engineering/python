@@ -12,8 +12,8 @@ while(True):
     try:
         n = int(value)
         numbers.append(n)
-    except:
-        print("Invalid value")
+    except Exception as e:
+        print("Invalid value", e)
 
 
 print("Numbers:")
