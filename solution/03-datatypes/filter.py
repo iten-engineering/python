@@ -21,3 +21,7 @@ def odd(number):
 odd_numbers = list(filter(odd, numbers))
 print(odd_numbers)
 
+# filter odd numbers with lambda
+odd_numbers2 = list(filter(lambda n: n%2 == 1, numbers))
+print(odd_numbers2)
+
