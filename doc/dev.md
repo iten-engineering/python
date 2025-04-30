@@ -5,7 +5,7 @@ Content
 - [Package Manager Scenarios](#package-manager-scenarios)
 - [Commands](#commands)
 
-# Package Managers
+# Package Manager
 
 Python Package Managers Overview (2025):
 Below is a summary of the most widely used Python package and environment managers.

@@ -8,8 +8,8 @@
 - [Lab Code](lab)
 - [Solution Code](solution)
 - [Example Code](example)
+- [Development (Package Manager)](doc/dev.md)
 - [Reference](doc/refs.md)
-- [Development Notes](doc/dev.md)
 
 **Other courses**
 - <a href="https://www.iten-engineering.ch/course.php" target="_blank">Course overview</a>
