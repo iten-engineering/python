@@ -4,7 +4,7 @@
 
 **Content**
 - [Handout](handout)
-- [Lab (Übungsbeschreibungen)](doc/lab.md) 
+- [Lab (Übungen)](doc/lab.md) 
 - [Lab Code](lab)
 - [Solution Code](solution)
 - [Example Code](example)
