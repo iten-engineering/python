@@ -19,7 +19,6 @@ for p in persons_list:
     email = p['contact']['email']
     print(firstname, lastname, email)
 
-
 # Filter for females with age less than 30
 print("#")
 print("# Femals under 30 years")

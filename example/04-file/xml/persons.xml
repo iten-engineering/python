@@ -1,20 +1,4 @@
 <persons>
-     <age>25</age>
-        <gender>Female</gender>
-        <person>
-        <firstname>Alice</firstname>
-        <lastname>Smith</lastname>
-       <address>
-            <street>123 Oak St</street>
-            <city>Springfield</city>
-            <state>IL</state>
-            <zipcode>62701</zipcode>
-        </address>
-        <contact>
-            <email>alice.smith@example.com</email>
-            <phone>555-123-4567</phone>
-        </contact>
-    </person>
     <person>
         <firstname>Bob</firstname>
         <lastname>Johnson</lastname>
