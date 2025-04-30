@@ -1,4 +1,4 @@
-<person>
+<person vip="true">
     <firstname>John</firstname>
     <lastname>Doe</lastname>
     <age>30</age>

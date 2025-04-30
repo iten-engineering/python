@@ -1,10 +1,10 @@
 <persons>
-    <person>
+     <age>25</age>
+        <gender>Female</gender>
+        <person>
         <firstname>Alice</firstname>
         <lastname>Smith</lastname>
-        <age>25</age>
-        <gender>Female</gender>
-        <address>
+       <address>
             <street>123 Oak St</street>
             <city>Springfield</city>
             <state>IL</state>
