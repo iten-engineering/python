@@ -33,16 +33,19 @@ Package manager for Python (and other) packages (libraries):
   - can be shared between machines / developers 
   
 
-Command                              | Description
------------------------------------- | ---------------------------------------- 
-conda --version                      | Show version
-conda info --envs                    | Show environments
-conda create -n myenv phython=3.6.2  | Create environment with given phyton version
-conda env remove -n myenv            | Remove environment
-conda activate myenv                 | Activate the myenv environment
-conda list                           | Show packages of active environment
-conda install [pachagename]          | Install Package 
-conda update [pachagename]           | Update Package 
+| Command                             | Description                     |
+| ----------------------------------- | ------------------------------- | 
+| conda --verson                      | Show version |
+| conda info --envs                   | Show conda environments |
+| conda list                          | Show installed libraries |
+| conda install <package>             | Install a package |
+| conda update <package>              | Update a package |
+| conda create -n <env>               | Create conda environment |
+| conda env create -f environment.yml | Create conda environment |
+| conda env update -f environment.yml | Update conda environment |
+| conda env remove -n <name>          | Remove conda environment |
+| pip install <package>               | Install a package |
+| pip update <package>                | Update a package |
 
 > ! Execute command within the Anaconda Shell.
 
