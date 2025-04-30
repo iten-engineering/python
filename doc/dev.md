@@ -1,37 +1,125 @@
 # Development
 
 Content
-- [Package Manager](#Package-Manager)
-- [IDEs](#IDEs)
-- [Troubleshoot](#Troubleshoot)
+- [Package Manager](#package-manager)
+- [Package Manager Scenarios](#package-manager-scenarios)
+- [Commands](#commands)
+
+# Package Managers
+
+Python Package Managers Overview (2025):
+Below is a summary of the most widely used Python package and environment managers.
+
+## 1. pip
+- **Description**: The standard package installer for Python.
+- **Key Features**:
+  - Installs from [PyPI](https://pypi.org/)
+  - Supports `requirements.txt`
+  - Compatible with `venv`, `virtualenv`
+- **Command Example**: `pip install requests`
+
+## 2. pipx
+- **Description**: Installs and runs Python CLI tools in isolated environments.
+- **Key Features**:
+  - Each tool runs in its own virtual environment
+  - Great for installing dev tools like `black`, `httpie`
+- **Command Example**: `pipx install black`
+
+## 3. conda
+- **Description**: A powerful package and environment manager from Anaconda Inc.
+- **Key Features**:
+  - Manages both Python and non-Python dependencies (e.g., C, Fortran libraries)
+  - Works across platforms
+  - Strong isolation via environments
+- **Command Example**: `conda install numpy`
+
+## 4. Anaconda
+- **Description**: A full Python/R distribution for data science, including `conda`.
+- **Key Features**:
+  - Pre-bundled with 250+ scientific packages
+  - Includes `conda`, Jupyter, Spyder, and more
+  - Heavyweight (3–4 GB)
+  - Best for beginners in data science and ML
+- **Website**: [anaconda.com](https://www.anaconda.com/)
+
+## 5. Miniconda
+- **Description**: A minimal installer for `conda`, without preinstalled packages.
+- **Key Features**:
+  - Lightweight alternative to Anaconda
+  - Lets you install only what you need with `conda`
+  - Recommended for advanced users or when storage is limited
+- **Website**: [docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+
+## 6. poetry
+- **Description**: Modern dependency and package manager using `pyproject.toml`.
+- **Key Features**:
+  - Manages dependencies and virtual environments
+  - Simplifies publishing to PyPI
+- **Command Example**: `poetry add requests`
+
+## 7. pipenv
+- **Description**: Combines `pip` and `virtualenv` for project management.
+- **Key Features**:
+  - Uses `Pipfile` and `Pipfile.lock`
+  - Handles virtual environments automatically
+  - Less active development in recent years
+- **Command Example**: `pipenv install requests`
+
+## 8. hatch
+- **Description**: A modern tool focused on project, build, and environment management.
+- **Key Features**:
+  - Uses `pyproject.toml`
+  - Plugin-based and fast
+- **Command Example**: `hatch install`
+
+## 9. flit
+- **Description**: A lightweight tool for publishing pure Python packages.
+- **Key Features**:
+  - Uses `pyproject.toml`
+  - Simple and fast
+  - Great for libraries
+- **Command Example**: `flit install`
+
+## Comparison Table
+
+| Tool       | Type                  | Virtual Env | `pyproject.toml` | Preinstalled Packages | CLI App Support | Conda Support |
+|------------|-----------------------|-------------|------------------|------------------------|------------------|----------------|
+| pip        | Installer              | ✅           | ❌ (manual only)  | ❌                      | ❌                | ❌              |
+| pipx       | CLI App Installer      | ✅ (auto)    | ❌               | ❌                      | ✅                | ❌              |
+| conda      | Env + Package Manager  | ✅           | ❌               | ❌                      | ❌                | ✅              |
+| Anaconda   | Python Distribution    | ✅           | ❌               | ✅ (data science stack) | ❌                | ✅              |
+| Miniconda  | Conda Installer        | ✅           | ❌               | ❌                      | ❌                | ✅              |
+| poetry     | Project Manager        | ✅ (auto)    | ✅               | ❌                      | ❌                | ❌              |
+| pipenv     | Project Manager        | ✅ (auto)    | ❌ (uses Pipfile) | ❌                      | ❌                | ❌              |
+| hatch      | Project Manager        | ✅           | ✅               | ❌                      | ❌                | ❌              |
+| flit       | Publisher Tool         | ❌           | ✅               | ❌                      | ❌                | ❌              |
 
 
-## Package Manager
+# Package Manager Scenarios
 
-### Anaconda
+Recommended Python Package Managers for Teams (Beginner → Expert)
 
-- Anaconda 
-  - Offers a free Python distribution that includes the most important packages and tools for data science tasks 
-  - Details see: https://www.anaconda.com
+| Scenario                          | Recommended Tool | Why                                                                 |
+|----------------------------------|------------------|----------------------------------------------------------------------|
+| Simple scripts or small tools    | `pip + venv`     | Built-in, easy to understand, no extra dependencies.                |
+| CLI tools or dev utilities       | `pipx`           | Keeps tools isolated; perfect for formatters, linters, etc.         |
+| Web/backend apps (general use)   | `poetry`         | Modern, beginner-friendly with good defaults, handles everything.   |
+| Data science or ML projects      | `conda` or `Anaconda` | Handles Python + native libs easily, good IDEs included.        |
+| Projects needing speed + plugins | `hatch`          | Fast, extensible, works well with `pyproject.toml`.                 |
+| Lightweight packaging libraries  | `flit`           | Minimal setup for pure Python packages.                             |
+| Full Anaconda stack, less setup  | `Anaconda`       | Ideal for teaching, all-in-one solution with notebooks & IDEs.      |
+| Expert users with flexibility    | `Miniconda + poetry` | Combines light base + modern tooling.                           |
 
-- Company with a typical open source-based business model: additional tools, support, consulting, training and cloud hosting 
+## Suggested Defaults for Most Teams
 
-- Anaconda Navigator
-  - Manages Anaconda installation and included tools 
-  - Installed together with Anaconde
-  - Details see https://docs.anaconda.com/anaconda/navigator
+- 🟢 **Use `poetry`** for most application development — it's modern, team-friendly, and integrates with `pyproject.toml`.
+- 🔵 **Use `conda`** (or `Anaconda`) for data-focused projects, especially if native dependencies are common.
+- ⚙️ **Use `pipx`** alongside for managing dev tools like `black`, `flake8`, or `httpie`.
 
 
-### Conda
+# Commands
 
-Package manager for Python (and other) packages (libraries):
-- Packages are retrieved from a repository 
-- Default and configurable repository 
-- Supports multiple environments 
-  - specific set of packages with specific versions 
-  - configuration saved in environment.yaml 
-  - can be shared between machines / developers 
-  
+## Conda
 
 | Command                             | Description                     |
 | ----------------------------------- | ------------------------------- | 
@@ -58,7 +146,7 @@ References:
   https://conda.io/docs/user-guide/getting-started.html
 
 
-### PIP
+## PIP
 
 Package manager for Python packages (libraries). Packages are retrieved from a repository (Python package index): 
 
@@ -84,74 +172,5 @@ References:
 - Python package index
   https://pypi.org 
   
-
-## IDEs
-
-### Jupiter
-
-Notebook-style IDE: 
-- Web application that integrates code with text and interactive data visualizations
-- Start 
-  - Anaconda Navigator 
-  - Command line: 
-    `jupyter notebook --port [port]` 
-  - Set working directory for notebooks:                    
-    `jupyter notebook --notebook-dir='[path]'` 
-- Runs on http://localhost:[port] 
-  - See running servers: 
-    `jupyter notebook list` 
-  - incl. authentication token
-- Create new Notebook via Web UI 
-  - Navigate to desired location and click New -> Python3 notebook 
-  - File saved as [name].ipynb 
-  - Notebook page should open automatically in browser
-- Stop notebook 
-  - In the notebook page: click File -> Stop and Halt 
-  - In the jupyter page: click Running and Shutdown 
-- Stop server via killing the process 
-  - Linux: 
-    - `netstat –tulpn to retrieve pid`
-    - `kill [pid]` 
-  - Windows 
-    - `netstat –ano` - to retrieve pid
-    - `taskkill /PID [pid] /F`
-
-References:
-
-- Jupyter Notebook 
-  https://jupyter.org
-
-- Jupyter Notebook Documentation
-  https://jupyter.org/documentation.html
-
-- Installing Python Packages from a Jupyter Notebook:
-  https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/
-
-
-### Spyder
-
-Classic IDE for Python (https://pythonhosted.org/spyder)
-
-### PyCharme or IntelliJ Ultimate
-
-JetBrains PyCharme or IntelliJ Ultimate
-- https://www.jetbrains.com/pycharm 
-
-### VS Code
-
-Getting Started with Python in VS Code 
-- https://code.visualstudio.com/docs/python/python-tutorial
-
-
-## Troubleshoot
-
-### IntelliJ
-
-- Library im IntelliJ nicht `sichtbar`:
-  - Falls Installation via IntelliJ oder Conda gemacht und Library immer noch nicht verfügbar: Installation mit `pip install <library>` versuchen
-  
-- Settings / Jupiter Notebook: Interpreter setzen
-
-
 ---
 [Home](../README.md) &nbsp; | &nbsp; [Top](#Development) &nbsp;
