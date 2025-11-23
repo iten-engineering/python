@@ -1,0 +1,6 @@
+
+
+value = "Hello"
+
+
+print(value)
