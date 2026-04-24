@@ -18,5 +18,5 @@
 - <a href="https://www.iten-engineering.ch/course/python-design-pattern"  target="_blank">Python Desing Pattern</a>
 - <a href="https://www.iten-engineering.ch/course/python-advanced"        target="_blank">Python Advanced</a>
 - <a href="https://www.iten-engineering.ch/course/python-threading"       target="_blank">Python Threading</a>
-- <a href="https://www.iten-engineering.ch/course/specific"               target="_blank">Python Spezialkurse</a>
+- <a href="https://www.iten-engineering.ch/course/python-specific"        target="_blank">Python Spezialkurse</a>
 
